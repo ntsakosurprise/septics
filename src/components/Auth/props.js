@@ -1,0 +1,1 @@
+export const auth = {isFetching: false,isAuth: localStorage.getItem('user') ? true : false }

@@ -1,0 +1,100 @@
+
+
+THE PERFOMED QUERIES SQL:
+
+1. Find jobs where (the job_title matches keyword AND country_id equals country_id) AND state_name equals keyCity 
+
+
+SELECT jo_job.job_title AS JobTitle,jo_job.salary AS SalaryOffer,jo_country.country_name AS JobCountry,jo_company.name AS Employer
+	FROM jo_job 
+    	JOIN jo_country 
+        	ON jo_job.country_id = jo_country.id 
+        JOIN jo_company 
+        	ON jo_job.company_id = jo_company.id
+    WHERE (MATCH(job_title) AGAINST('General Worker') AND jo_job.country_id = 202 )
+           AND (city_name = 'Tzaneen' OR state_name = '')
+    ORDER BY JobTitle ASC
+    LIMIT 15
+
+
+ SELECT jo_job.job_title AS JobTitle,jo_job.salary AS SalaryOffer,jo_country.country_name AS JobCountry,jo_company.name AS Employer
+	FROM jo_job 
+    	JOIN jo_country 
+        	ON jo_job.country_id = jo_country.id 
+        JOIN jo_company 
+        	ON jo_job.company_id = jo_company.id
+    WHERE ((MATCH(job_title) AGAINST('General Worker')|| MATCH(position) AGAINST('General Worker') ) AND jo_job.country_id = 202 )
+           AND (city_name = 'Tzaneen' OR state_name = '')
+    ORDER BY JobTitle ASC
+    LIMIT 15
+
+
+
+
+
+    SEARCHNEXT: 
+
+    	fetchJobs = true
+
+    PREV: 
+
+    	fetchJobs = false
+
+
+
+    FETCHNNEXT:
+
+    	fetchJobs = false
+
+    PREV: 
+
+    	fetchJobs = true 
+
+
+
+  CLEARDB CREDENTIALS (DATABASE)
+
+  username: bc1813f82b99a6,
+  password: 0f9d834a,
+  host: us-cdbr-iron-east-04.cleardb.net,
+  database: heroku_1c7d3020cce4b09
+
+
+  DATABASE_URL:"mysql://bc1813f82b99a6:0f9d834a@us-cdbr-iron-east-04.cleardb.net/heroku_1c7d3020cce4b09?reconnect=true"
+
+  19900323rose@59
+
+ mysql --host=us-cdbr-iron-east-04.cleardb.net --user=bc1813f82b99a6 --password=0f9d834a --reconnect heroku_1c7d3020cce4b09 jobbriprod.sql
+
+ mysql -ubc1813f82b99a6 -p0f9d834a heroku_1c7d3020cce4b09 --host=us-cdbr-iron-east-04.cleardb.net < jobbritest.sql
+
+
+
+
+ JAWSDB CREDENTIALS(DATABASE)
+
+
+
+ Host:		qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com 	
+ Username: 	q4g6g1bnbgcg066q 	
+ Password 	xfdiurqzxmz9xk41 	
+ Port:	 	3306 	
+ Database: 	omvcqlm3n1gi1xxz
+
+
+ mysql://q4g6g1bnbgcg066q:xfdiurqzxmz9xk41@qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/omvcqlm3n1gi1xxz
+
+mysql -uq4g6g1bnbgcg066q -pxfdiurqzxmz9xk41 omvcqlm3n1gi1xxz  --host=qbhol6k6vexd5qjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com < jobbritest.sql
+
+
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `user_join` AFTER INSERT ON `jo_user` FOR EACH ROW BEGIN
+
+    INSERT INTO jo_user_join_log VALUES(NULL,'New jobbri User',NEW.u_type,NOW());
+
+  END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
