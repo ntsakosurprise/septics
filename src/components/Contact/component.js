@@ -6,6 +6,7 @@ import * as actions from './actions'
 
 import ContactForm from './contactform/contactform'
 import Touch from './touch/touch' 
+import ServiceReq from './servicereq/servicereq'
 // import Gmap from './gmap/gmap'
 
 
@@ -93,6 +94,7 @@ class Contact extends Component{
                  <Touch />
                  <ContactForm />
                  <strong className="clearfix" /> 
+                 <ServiceReq />
                  {/* <div className="page">
       
                     <div className="flexbox">

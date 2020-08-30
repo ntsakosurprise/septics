@@ -1,7 +1,7 @@
 import React, { Component } from 'react' 
 import faqs from './faqs'
 import Accordion from './accordion'
-
+import Upload from './upload'
 
 
 
@@ -38,7 +38,12 @@ class Faqi extends Component{
                      return null
                  }
                 
-               })} 
+               })}
+
+               <div>
+
+                   <Upload />
+               </div>
             
            </section>
         )

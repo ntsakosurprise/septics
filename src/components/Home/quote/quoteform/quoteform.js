@@ -424,12 +424,12 @@ class QuoteForm extends  Component{
                         
 
 
-
+                    <button onClick={(e)=>this.submitForm(e)} className="home__quote--form-submit" >Send</button>
                        
                         
                     </form>
 
-                    <button onClick={(e)=>this.submitForm(e)} className="home__quote--form-submit" >Send</button>
+                    
                     <div>
 
                         {

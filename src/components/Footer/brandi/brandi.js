@@ -16,14 +16,14 @@ const Brand = ()=>{
                     <button className="footer__brand-btn">Request Service</button>
                 </section>
 
-                <section className="grid-row footer__brand--sok">
+                <section className="footer__brand--sok">
 
-                    <div className="grid-col-5">
+                    <div className="footer__brand--sok-qrs">
                         <p className="footer__brand--squares footer__brand--squares-1"></p>
                         <p className="footer__brand--squares footer__brand--squares-2"></p>
                         <p className="footer__brand--squares footer__brand--squares-3"></p>
                     </div>
-                    <div className="grid-col-7">
+                    <div className="footer__brand--sok-social">
 
                     <h3 className="footer__brand--social-mhead">Stay South Septic updated on Social</h3>
                             <h4 className="footer__brand--social-shead">Media</h4>
@@ -45,6 +45,7 @@ const Brand = ()=>{
                             </nav>
 
                         </section>
+                        <strong className="clearfix" />
                     
 
                     </div>
@@ -54,14 +55,14 @@ const Brand = ()=>{
                  </section>
            
 
-                <section className="grid-row footer__brand--brand">
+                <section className="footer__brand--brand">
 
                
 
-                <div className="grid-col-5 footer__brand-offsets">
+                <div className="footer__brand-copy footer__brand-offsets">
                     <span className="mg-left-fl-bt font-fd-xx-tn fg-light">South Septic Tanks 2020</span>
                 </div>
-                <div className="grid-col-4 footer__brand-offsets">
+                <div className="footer__brand-main footer__brand-offsets">
                     <nav>
                         <Link to='/about' className="link footer__brand-links">
                             About
@@ -75,7 +76,7 @@ const Brand = ()=>{
                     </nav>
                 </div> 
             
-                <div className="grid-col-3 ">
+                <div className="footer__brand-info">
                     <nav>
                         <Link to='/faqs' className="link footer__brand-links footer__brand-hanging">
                             Faqs
@@ -86,6 +87,8 @@ const Brand = ()=>{
                        
                     </nav>
                 </div>
+
+                <strong className="clearfix" />
 
 
 

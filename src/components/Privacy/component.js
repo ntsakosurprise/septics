@@ -5,7 +5,14 @@ import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
 import * as actions from './actions'
 import Header from './header/header'
-import Faqi from './faqi/fagi'
+import Faqi from './faqi/fagi' 
+
+
+import Bio from './bio/bio' 
+import Im from './im/im'
+import Clients from './clients/clients' 
+import Prices from './prices/prices'
+import ServiceReq from './servicereq/servicereq'
 
 
 
@@ -28,7 +35,7 @@ class Privacy extends Component{
 
             <article className="faqs">
                   
-                  <section>
+                  {/* <section>
                       <Header />
                   </section>
                   <Faqi />
@@ -39,7 +46,19 @@ class Privacy extends Component{
                         <button className="faqs__contact--btn">Email us</button>
                       </Link>
 
-                  </section>
+                  </section> */}
+
+                <h2 className="services__title">
+                    <span className="services__title-primary">Privacy</span> 
+                    {/* <span className="services__title-secondary">Services</span> */}
+                    
+                </h2>
+
+                 <Im />
+                <Faqi />
+                <strong className="clearfix" /> 
+                <ServiceReq />
+               
                     
                 
 
