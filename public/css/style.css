@@ -8389,7 +8389,9 @@ p {
       left: 40%; }
       @media only screen and (max-width: 600px) {
         .home__septic--shaderect {
-          top: 575px; } }
+          top: 575px;
+          width: 5rem;
+          left: 2%; } }
     .home__septic--shaderect-2 {
       width: 30rem;
       background-color: #FFF;
@@ -8400,7 +8402,9 @@ p {
       left: 38%; }
       @media only screen and (max-width: 600px) {
         .home__septic--shaderect-2 {
-          top: 620px; } }
+          top: 620px;
+          width: 5rem;
+          left: 2%; } }
     .home__septic--content {
       position: relative;
       margin-left: 35%;
