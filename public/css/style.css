@@ -38,9 +38,9 @@
 /*========== GENERAL GUTTER VARIABLES [Start]==========================*/
 /*========== OFFSETS VARIABLES [Start]==========================*/
 /*========== POSITIONAL VARIABLES [Start]==========================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -147,7 +147,8 @@ html {
 
 /* Below, Create a project wide font-definitions */
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 .margin-offset-small {
   margin-top: 5rem; }
@@ -8082,139 +8083,6 @@ p {
 
 .home {
   margin-bottom: 0; }
-  .home__search {
-    width: 75%;
-    margin-left: 20%;
-    margin-top: 8rem;
-    position: relative; }
-    .home__search--fm {
-      display: inline-block;
-      position: relative; }
-    .home__search--fm-1 {
-      width: 30%; }
-    .home__search--fm-2 {
-      width: 25%; }
-    .home__search--fm-3 {
-      width: 30%; }
-    .home__search--circle {
-      height: 10rem;
-      width: 10rem;
-      background-color: #228B22;
-      border-radius: 50%;
-      position: absolute;
-      top: 0;
-      right: 8%; }
-  .home__top {
-    width: 25%;
-    background-color: red;
-    float: left; }
-  .home__search-icons {
-    display: inline-block;
-    position: absolute; }
-  .home__search-icons-s {
-    width: 1.5rem;
-    top: 45%;
-    left: 7%; }
-  .home__search-icons-l {
-    width: 1.7rem;
-    left: 7.5%;
-    top: 44%; }
-  .home__search-icons-c {
-    width: 1.6rem;
-    left: 6%;
-    top: 48%; }
-  .home__what {
-    width: 33%;
-    padding-left: 2%;
-    float: left; }
-    .home__what--title {
-      background-color: #FFF;
-      padding: 4rem;
-      width: 40%; }
-    .home__what--message {
-      background-color: rgba(192, 175, 175, 0.1);
-      width: 30rem;
-      height: 20rem;
-      font-size: 1.4rem;
-      padding: 3rem;
-      padding-top: 8rem;
-      z-index: -100;
-      position: relative;
-      top: -3rem;
-      left: 10%; }
-  .home__who {
-    width: 67%;
-    float: left; }
-    .home__who--leg {
-      background-color: rgba(192, 175, 175, 0.05);
-      width: 30rem;
-      height: 25rem;
-      margin-top: 20rem;
-      position: relative;
-      float: left; }
-      .home__who--leg-title {
-        background-color: #FFF;
-        width: 15rem;
-        height: 10rem;
-        position: relative;
-        font-size: 1.5rem;
-        padding: 1.5rem;
-        padding-top: 3rem;
-        top: 20%;
-        left: 25%; }
-    .home__who--players {
-      background-color: rgba(192, 175, 175, 0.05);
-      width: 60%;
-      margin-top: 10rem;
-      padding-top: 3rem;
-      padding-left: 5%;
-      float: left;
-      padding-bottom: 5rem; }
-      .home__who--players-cand {
-        float: left;
-        width: 50%; }
-        .home__who--players-cand h2 {
-          font-size: 1.8rem;
-          margin-bottom: 5rem; }
-        .home__who--players-cand p {
-          font-size: 1.5rem;
-          width: 80%;
-          margin-bottom: 7rem; }
-        .home__who--players-cand button {
-          background-color: rgba(192, 175, 175, 0.1);
-          padding: 1.2rem;
-          width: 15rem;
-          color: #228B22;
-          border: none; }
-          .home__who--players-cand button:hover {
-            color: #FFF;
-            background-color: #228B22; }
-      .home__who--players-hire {
-        float: left;
-        width: 50%; }
-        .home__who--players-hire h2 {
-          font-size: 1.8rem;
-          margin-bottom: 5rem; }
-        .home__who--players-hire p {
-          font-size: 1.5rem;
-          width: 80%;
-          margin-bottom: 7rem; }
-        .home__who--players-hire button {
-          background-color: #FFF;
-          padding: 1.2rem;
-          width: 15rem;
-          color: #228B22;
-          border: none; }
-          .home__who--players-hire button:hover {
-            color: #FFF;
-            background-color: #228B22; }
-    .home__who--pointer {
-      width: 4rem;
-      height: 20rem;
-      background-color: #FFF;
-      position: absolute;
-      top: 38%;
-      left: 54%; }
   .home__goal {
     width: 100%;
     background-color: #FFF;
