@@ -1,14 +1,97 @@
 
 import React,{Component} from 'react'
+import { TweenLite, Power4 } from "gsap";
 // import Benefits from './benefits/benefits' 
 
 
 
 class Septic extends Component{
     
+
+    constructor(props){
+        super(props);
+        // reference to the DOM node
+        this.numbBoxes = 40
+        this.myElement = null
+        // reference to the animation
+        this.myTween = null 
+        this.state = {
+            shouldShowBoxes: true
+        }
+       
+    }
+
+    componentDidMount(){
+        // use the node ref to create the animation
+        // this.myTween = TweenLite.to(this.myElement, 1, {x: 100, y: 100});
+
+        TweenLite.to(".gsapbox", 1, {
+            scale: 0.1, 
+            y: 60,
+            yoyo: true, 
+            repeat: 3, 
+            ease: "power1.inOut",
+            delay:3,
+            stagger: {
+              amount: 1.5, 
+              grid: "auto",
+              from: "center"
+            }
+          });
+
+          TweenLite.set(".gsapbox",{
+            scale: 0.1, 
+            stagger: {
+              amount: 1.5, 
+              grid: "auto",
+              from: "center"
+            }
+          });
+
+          this.cancellAnimation()
+    }
+
+
+    createBoxes(){
+
+        let boxes = []
+        for(let b=0; b < this.numbBoxes; b++){
+
+            boxes.push(<div className="gsapbox gsapred" key={b}></div>)
+             
+        }
+
+        return boxes
+    }
+
+    cancellAnimation(){
+
+        setTimeout(function(){
+
+            this.setState({
+                shouldShowBoxes: false
+            },()=>{
+
+                console.log('TTHE TIMEOUT HAS EXECTUED')
+                console.log(this.state.shouldShowBoxes)
+            })
+        }.bind(this),50000)
+    }
+
+    // killAnimation(){
+
+    //     this.TweenLite.kill 
+
+    //     return null
+    // }
     
     render(){
 
+        const {state} = this
+
+        console.log('THE COMPONENT HAS RERENDERED')
+        console.log(state)
+        console.log(state.shouldShowBoxes)
         return(
 
             <div className="home__septic">
@@ -22,7 +105,10 @@ class Septic extends Component{
 
 
                 
-                <section className="home__septic--banner"></section> 
+                <section className={"home__septic--banner "+(state.shouldShowBoxes ? "" : " home__septic--clipedBanner")}>
+                    
+                    {state.shouldShowBoxes ? this.createBoxes() : null}
+                </section> 
 
                 <section className="home__septic--pledge">
 

@@ -148,7 +148,15 @@ html {
 /* Below, Create a project wide font-definitions */
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.viewport {
+  margin: 0 0 0 0;
+  width: 100vw;
+  overflow-x: hidden;
+  position: fixed; }
 
 .margin-offset-small {
   margin-top: 5rem; }
@@ -8222,8 +8230,6 @@ p {
             left: 15%;
             top: 50px; } }
     .home__septic--banner {
-      background-color: #228B22;
-      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
       width: 55%;
       height: 600px;
       float: left; }
@@ -8235,6 +8241,9 @@ p {
           float: none;
           width: 95%;
           height: 500px; } }
+    .home__septic--clipedBanner {
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      background-color: #228B22; }
     .home__septic--pledge {
       float: left;
       width: 25%;
@@ -9146,6 +9155,16 @@ div:nth-child(3n + 1) > img {
   100% {
     top: -20px;
     text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 50px 25px rgba(0, 0, 0, 0.2); } }
+
+.gsapbox {
+  margin: 0px 1.5% 1.5% 0px;
+  border-radius: 0; }
+
+.gsapred {
+  height: 5rem;
+  width: 5rem;
+  background-color: red;
+  display: inline-block; }
 
 .job {
   margin-bottom: 20rem;

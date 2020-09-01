@@ -38,6 +38,7 @@
     "fs": "0.0.1-security",
     "google": "^2.1.0",
     "google-react-maps": "^1.5.0",
+    "gsap": "^3.5.1",
     "joi": "^14.3.1",
     "jsonfile": "^5.0.0",
     "jsonwebtoken": "^8.4.0",
