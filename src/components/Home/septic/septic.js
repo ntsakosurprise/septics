@@ -99,7 +99,19 @@ class Septic extends Component{
 
                 <section className="home__septic--welcome">
                     
-                    <span className="home__septic--welcome-text">Welcomes you</span>
+                    {/* <span className="home__septic--welcome-text">Welcomes you</span> */}
+
+                    <div class="text">
+                        <div class="text__line">
+                            <p>South</p>
+                            <p>Welcomes</p>
+                        </div>
+                        <div class="text__line">
+                            <p>Septic</p>
+                            <p>You</p>
+                        </div>
+                        
+                    </div>
 
                 </section>
 

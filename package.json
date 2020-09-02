@@ -45,6 +45,7 @@
     "mysql": "^2.16.0",
     "nodemon": "^1.12.5",
     "promise-mysql": "^3.3.1",
+    "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.23.2",
     "query-string": "^6.12.1",
     "randomstring": "^1.1.5",

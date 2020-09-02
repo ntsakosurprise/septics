@@ -1,68 +1,67 @@
 
 import React from 'react' 
-import {Link} from 'react-router-dom'
-import primaryLinks from './links'
-import Navigation from "../../../Common/navigation/navigation"
-import Icon from '@material-ui/core/Icon';
-import { withStyles } from '@material-ui/core/styles'
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import Alert from './alert'
+import {Link} from 'react-router-dom';
+import SlidingMenu from './slidingmenu'
 
 
-const styles = {
-    root: {
-     
-      color:"#ff6633",
-      fontSize: 20,
-      
-    },
-    iconhover:{
-        '&:hover':{
 
-            content: ""
-        }
+class Primary extends React.Component{
+    constructor(props) {
+      super(props);
+      this.state = {
+        toggleMenu: false
+      }
+      this.handleClick = this.handleClick.bind(this);
     }
-  };
-
-
-
-function Primary(props) {
     
+    handleClick() {
+      console.log('THE MENU BUTTON HAS BEEN CLICKED')
+      console.log(this.state.toggleMenu);
+      this.setState({toggleMenu: !this.state.toggleMenu});
+    }
 
-    return(
-
-         <div className="header__menu--bars">
-
-            {/* <input id="test" type="checkbox" />
-            <label for="test">
-                <p className="burger">
-                    <span className="header__menu--bars-menubar-1"></span>
-                    <span className="header__menu--bars-menubar-2"></span>
-
-                </p>
-               
-            </label> */}
-
-            {/* <div class="menu">
-                <div>Home</div>
-                <div>About</div>
-                <div>Hello</div>
-                <div>Contact</div>
-            </div>
+   
+    
+    render(){
+      let slideClass;
+      this.state.toggleMenu
+        ? slideClass = 'showMenu'
+        : slideClass = 'hideMenu';
+      
+      return(
+        <div className="header__menu--bars">
+            <button style={{zIndex:9001,position:'relative',
+                            border: 'none',
+                            backgroundColor: 'transparent',
+                            cursor: 'pointer'
+                        }} 
+                    onClick={this.handleClick}>
+                            
+              {
+                  this.state.toggleMenu 
+                  ? <span style={{
+                           
+                           color: 'white',
+                           fontSize: `15px`
+                        }} >x</span>
+                   
+                  : <p style={{marginTop:0,paddingTop: 0}}><span className="header__menu--bars-menubar-1"></span>
+                  <span className="header__menu--bars-menubar-2"></span></p>
+                  
+              }
             
-            <span class="main">
-                <span>Pure CSS Menu</span>
-            </span> */} 
-
-                <span className="header__menu--bars-menubar-1"></span>
-                <span className="header__menu--bars-menubar-2"></span>
-
-          
-
-         </div>
-    )
-
-}
-
-
-export default withStyles(styles)(Primary)
+              
+            </button>
+            <SlidingMenu slideClass={slideClass} onClick={this.handleClick}>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/faqs">Faqs</Link>
+              <Link to="/privacy">Privacy</Link>
+            </SlidingMenu>
+        </div>
+      );
+    }
+  }
+  
+export default Primary
