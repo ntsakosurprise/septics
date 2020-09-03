@@ -1,7 +1,9 @@
 
 import React, {Component} from 'react'
 import {Router, Switch,Route} from 'react-router-dom'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 import all from '../all/routes'
 import restricted from '../restricted/routes'
 import limited from '../limited/routes'
@@ -18,7 +20,16 @@ import ScrollSmooth from '../scrollSmooth/component'
 
 class Routes extends Component{
 
+ 
 
+    componentWillMount(){
+
+        AOS.init({
+            // initialise with other settings
+            duration : 2000,
+            mirror:     true, // whether elements should animate out while scrolling past them
+          });
+    }
   
     render(){
 

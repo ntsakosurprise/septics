@@ -49,10 +49,19 @@ class Clients extends  Component{
                                 <div>
 
                                     <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua.
+                                    SouthSeptic has made it its mandatory business trait to provide  reliable services to its clients all the time. 
+                                    The goal for reliability is  embedded all over our operations at all times. 
 
+                                    </p>
 
+                                    <p>
+                                    To ensure that your needs as our client are met on every level, we use equipment such as trucks that are equipped with the necessary
+                                     tools that help us in achieving a smooth and flawless workflow.
+                                    </p>
+
+                                    <p>
+                                    The input of our clients is of higher value to us,and we are always open to their commands should there be any; 
+                                    this helps us ensure that we leave our clients happy and satisfied.
                                     </p>
 
                                 </div>

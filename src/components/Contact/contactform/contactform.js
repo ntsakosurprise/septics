@@ -25,7 +25,7 @@ class ContactForm extends  Component{
                         validation: {
                                 isRequiredFormat:{
                                     minLetters: 2,
-                                    minPieces: 2,
+        
                                     maxPieces: 3,
                                     specialCharacters: true
                                 },
@@ -53,10 +53,10 @@ class ContactForm extends  Component{
                         value:'',
                         validation: {
                                 isRequiredFormat:{
-                                    minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
+                                    
+                                    isRequired: true,
+                                    isNumber: true,
+                                    isLen: 10
                                 },
                                 isPlaceholder: true
                     
@@ -82,14 +82,13 @@ class ContactForm extends  Component{
                         value:'',
                         validation: {
                             isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
+                                isRequired: true,
+                                isEmail: true
+                                
                             },
                     
                         },
-                        isValid: true,
+                        isValid: false,
                         isTouched: false,
                         validationMessage: '',
                         validationStyles: {
@@ -97,10 +96,10 @@ class ContactForm extends  Component{
                         },
                         config: {
                             
-                            name: "password",
-                            type: 'password',
+                            name: "email",
+                            type: 'text',
                             placeholder: '....',
-                            disabled: false
+                            // disabled: false
                             
                         }
                         
@@ -112,9 +111,8 @@ class ContactForm extends  Component{
                         validation: {
                                 isRequiredFormat:{
                                     minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
+                                    isRequired: true,
+                                   
                                 },
                                 isPlaceholder: true
                     
@@ -140,14 +138,14 @@ class ContactForm extends  Component{
                         value:'',
                         validation: {
                             isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
+                                isRequired: true,
+                                minLetters: 2,
+                                minPieces: 5
+                                
                             },
                     
                         },
-                        isValid: true,
+                        isValid: false,
                         isTouched: false,
                         validationMessage: '',
                         validationStyles: {
@@ -155,7 +153,7 @@ class ContactForm extends  Component{
                         },
                         config: {
                             
-                           
+                            name: 'message',
                             placeholder: '....',
                             disabled: false
                             
@@ -167,7 +165,7 @@ class ContactForm extends  Component{
                   
                 
             },
-            changePassword: false
+            
         };
     }
 
@@ -249,7 +247,8 @@ class ContactForm extends  Component{
                 let charsArray = Array.from(specialCharactersRegex)
                     charsArray.push("'")
                 let containsSpecialCars = charsArray.some((v)=>value.indexOf(v) > 0)
-                let pieces = value.split(/\W+/)
+                let pieces = value.split(/\W+/) 
+                let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                 console.log('SPECIAL CHARACTER TEST')
                 console.log(charsArray)
                 console.log(containsSpecialCars)
@@ -257,9 +256,12 @@ class ContactForm extends  Component{
                 console.log(specialCharactersRegex)
                 let isRequiredFormat =  validateControl.validation.isRequiredFormat 
                 if(isRequiredFormat.specialCharacters && containsSpecialCars === true ) return [false,`special characters are not allowed as username`]
-                if(value.length < isRequiredFormat.minLetters ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
-                if(pieces.length < isRequiredFormat.minPieces ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
-                if(pieces.length > isRequiredFormat.maxPieces ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`]
+                if(isRequiredFormat.minLetters && (value.length < isRequiredFormat.minLetters) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
+                if(isRequiredFormat.minPieces && (pieces.length < isRequiredFormat.minPieces) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
+                if(isRequiredFormat.maxPieces && (pieces.length > isRequiredFormat.maxPieces) ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`] 
+                if(isRequiredFormat.isNumber && isNaN(value) ) return [false,`${validateControl.config.name} should be a number with no spaces`] 
+                if(isRequiredFormat.isLen && (value.length !== isRequiredFormat.isLen) ) return [false,`${validateControl.config.name} should be a total of ${isRequiredFormat.isLen} numbers`] 
+                if(isRequiredFormat.isEmail && emailRegex.test(value) !== true) return [false,`${validateControl.config.name} Should be a valid email`]
             
                     
             
@@ -269,19 +271,13 @@ class ContactForm extends  Component{
         
     }
 
-    showPasswordBox(e){
-
-        e.preventDefault()
-        const changePassword = !this.state.changePassword
-        this.setState({...this.state,changePassword:changePassword })
-    }
-
+    
     submitForm = (e)=>{
                 
             e.preventDefault() 
             
             const {actions} = this.props
-            const {sendUserProfileUpdate,unsetIsProfile} = actions 
+            const {sendContactData} = actions 
             let submittData = {} 
             let formIsValid = true 
             let {form} = this.state 
@@ -293,7 +289,9 @@ class ContactForm extends  Component{
                 
                 console.log('THE SUBMIT CONTROL')
                 console.log(form[k])
-                if(form[k].validation && form[k].validation.isRequired){
+                if(form[k].validation && form[k].validation.isRequiredFormat){
+
+                    
 
                     if(form[k].isValid === false){
 
@@ -305,26 +303,20 @@ class ContactForm extends  Component{
     
     
                     }else{
-    
-                        if(k !== 'password' || form[k].value.trim() !== '' ){
-    
-                           
-                            submittData[k] = form[k].value
-                        }
-                        
+     
+                        submittData[k] = form[k].value
+                    
                     }
 
-                }else if(form[k].value.trim() !== ''){
+                }else{
 
-                    if(form[k].isValid === false){
-                        formIsValid = false 
-                        break
-                    }else{
+                    if(form[k].value.trim() !== ''){
 
                         submittData[k] = form[k].value
 
                     }
-                  
+                   
+
                 }
               
             
@@ -333,39 +325,10 @@ class ContactForm extends  Component{
             if(!formIsValid) return
 
 
-            if(submittData.username){
-
-                console.log('THE name')
-                console.log(submittData.username)
-                let names = submittData.username.split(' ') 
-                console.log(names)
-
-                submittData.fullName = {firstName: names[0],lastName: names[1]} 
-                delete submittData.username 
-                console.log('THE FORM DATA TO BE SUMBITTED')
-                console.log(submittData)
-              
-                 
-            }
-
-            if(submittData.newpassword){
-
-                submittData['password'] = submittData.newpassword 
-                delete submittData.newpassword
-
-            }
-
-            
-            
-            
+        
             console.log(submittData)
-           
-            // console.log('THE SIGN UP DATA')
-            // console.log(submittData)
+            sendContactData(submittData)  
             
-            // submittData.strategy = 'anzii'
-            sendUserProfileUpdate(submittData,1,'infoUpdate') 
-            // unsetIsProfile()
             
             
 
@@ -384,13 +347,13 @@ class ContactForm extends  Component{
     componentDidUpdate(){
         
                 console.log()
-                const {isActionSuccessful,launcher,isFetcing,actions} = this.props 
+                const {contact,actions} = this.props 
+                const {isActionSuccessful,isFetcing} = contact
                 const  {removeNotification} = actions 
-                console.log('THE LAUNCHER INFOUPDATE::')
-                console.log(launcher)
-        
-                if(isActionSuccessful && launcher === 'infoUpdate') {
-                    this.notify({message:'Profile info successfully updated',type: 'success',className: 'notify-success'}) 
+            
+              
+                if(isActionSuccessful) {
+                    this.notify({message:'Profile info successfully sent',type: 'success',className: 'notify-success'}) 
                     removeNotification()
                 }
 
@@ -402,12 +365,14 @@ class ContactForm extends  Component{
 
     render(){
 
-            const {changePassword} = this.state 
-            const {firstName,lastName,isFetching,isProgressBar} = this.props 
-            let name = firstName ? `${firstName} ${lastName}` : ''
-            console.log('PROPS IN INFOUPDATE')
-            console.log(this.props)
-          
+
+            const {contact} = this.props
+            const {isFetching,isProgressBar} = contact 
+
+            console.log('THE PROGRESSBAR AND ISFETCHING VALUES::')
+            console.log(isProgressBar) 
+            console.log(isFetching)
+           
             
        
 
@@ -425,10 +390,10 @@ class ContactForm extends  Component{
                                 <FormControl 
                             
                                     styles={{child:'contact__mail--form-input',error: ''}}
-                                    id = 'email'
+                                    id = 'username'
                                     controlData={this.state.form.username}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                    
                                 
                                 />
 
@@ -446,7 +411,7 @@ class ContactForm extends  Component{
                                     id = 'phone'
                                     controlData={this.state.form.phone}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                   
                                 
                                 />
 
@@ -461,10 +426,10 @@ class ContactForm extends  Component{
                                 <FormControl 
                             
                                     styles={{child:'contact__mail--form-input',error: ''}}
-                                    id = 'username'
+                                    id = 'email'
                                     controlData={this.state.form.email}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                  
                                 
                                 />
 
@@ -482,7 +447,7 @@ class ContactForm extends  Component{
                                     id = 'area'
                                     controlData={this.state.form.area}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                 
                                 
                                 />
 
@@ -501,7 +466,7 @@ class ContactForm extends  Component{
                                 id = 'message'
                                 controlData={this.state.form.message}
                                 change={(control)=>this.updator(control)}
-                                placeHolder={name}
+                               
 
                             />
 
@@ -526,13 +491,8 @@ class ContactForm extends  Component{
                        
                         <div>
 
-                            {
-                                
-                                isProgressBar === true && isFetching === true
-                                    ?  <ProgressBarLinear />
-                                    : null
-                            }
-        
+                          
+                           
                         
                         </div>
 

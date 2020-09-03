@@ -1,6 +1,6 @@
 
 import home from '../Home/reducer'
-import contact from '../Home/reducer' 
+import contact from '../Contact/reducer' 
 import services from '../Services/reducer'
 import career from '../Career/reducer'
 import candidateDashboard from '../CandidateDashboard/reducer'

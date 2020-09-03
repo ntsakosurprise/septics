@@ -40,15 +40,14 @@ class Clients extends  Component{
 
                 
                                 <h4 className="services__clients--sign-pos">1</h4> 
-                                <h5 className="services__clients--sign-title">Cleaning act one</h5> 
+                                <h5 className="services__clients--sign-title">Odour</h5> 
                                 <figure className="services__clients--sign-pik">
                                     <img src="/img/tank_sign_1.jpg" />
                                 </figure>
                                 <div className="services__clients--sign-txt"> 
 
                                     <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua.
+                                    Odours escape on the surface of the land when the tank is full and is a sure sign that the tank is full
 
 
                                     </p>
@@ -65,16 +64,14 @@ class Clients extends  Component{
 
                 
                             <h4 className="services__clients--sign-pos">2</h4> 
-                            <h5 className="services__clients--sign-title">Cleaning act one</h5> 
+                            <h5 className="services__clients--sign-title">Pooling Water</h5> 
                             <figure className="services__clients--sign-pik">
                                 <img src="/img/tank_sign_1.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua.
-
+                                Water pooling around the septic tank especially if it is not from rain water
 
                                 </p>
 
@@ -90,16 +87,14 @@ class Clients extends  Component{
 
                 
                             <h4 className="services__clients--sign-pos">3</h4> 
-                            <h5 className="services__clients--sign-title">Cleaning act one</h5> 
+                            <h5 className="services__clients--sign-title"> Slow drains</h5> 
                             <figure className="services__clients--sign-pik">
                                 <img src="/img/tank_sign_1.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua.
-
+                                Slow draining basins, showers and toilets are a good indication your tank needs to be pumped
 
                                 </p>
 
@@ -115,15 +110,14 @@ class Clients extends  Component{
 
                 
                             <h4 className="services__clients--sign-pos">4</h4> 
-                            <h5 className="services__clients--sign-title">Cleaning act one</h5> 
+                            <h5 className="services__clients--sign-title">Sewer backup</h5> 
                             <figure className="services__clients--sign-pik">
                                 <img src="/img/tank_sign_1.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                labore et dolore magna aliqua.
+                                A definite sign that your tank is full. At this point you cannot afford to delay on getting the septic tank pumped.
 
 
                                 </p>

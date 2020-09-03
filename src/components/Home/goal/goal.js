@@ -122,16 +122,39 @@ class Goal extends Component{
 
                         <div class="home__goal-overlay-inner">
                             
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            <p  data-aos="fade"
+                                    data-aos-delay="500"
+                                    data-aos-duration="50000"
+                                    data-aos-easing="ease-in-out-cubic">
+                            Our goal with SouthSeptic is to be the premier provider of septic
+                             tank services in and around surrounding areas of Gauteng.
+                              We want to mantain more team players that provide great
+                             experiences  to our clientele as they render our services.
 
                             </p>
 
                             <div className="home__goal--squares-container">
-                                <span className="home__goal--squares home__goal--squares-1"></span>
-                                <span className="home__goal--squares home__goal--squares-2"></span>
-                                <span className="home__goal--squares home__goal--squares-3"></span>
-                                <section className="home__goal--become" onClick={this.openModal}>
+                                <span className="home__goal--squares home__goal--squares-1"
+                                 data-aos="zoom-out"
+                                 data-aos-delay="1000"
+                                 data-aos-duration="15000"
+                                 data-aos-easing="ease-in-out-cubic"></span>
+                                <span className="home__goal--squares home__goal--squares-2"
+                                     data-aos="zoom-out-right"
+                                     data-aos-delay="1500"
+                                     data-aos-duration="15000"
+                                     data-aos-easing="ease-in-out-cubic"
+                                ></span>
+                                <span className="home__goal--squares home__goal--squares-3"
+                                 data-aos="zoom-out-left"
+                                 data-aos-delay="2000"
+                                 data-aos-duration="15000"
+                                 data-aos-easing="ease-in-out-cubic"></span>
+                                <section className="home__goal--become" onClick={this.openModal} 
+                                 data-aos="fade"
+                                 data-aos-delay="2500"
+                                 data-aos-duration="15000"
+                                 data-aos-easing="ease-in-out-cubic">
                                     <span className="home__goal--become-b">Become</span>
                                     <span className="home__goal--become-o">our client</span>
                                 </section>

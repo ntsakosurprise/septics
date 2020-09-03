@@ -33,8 +33,8 @@ class Im extends  Component{
                                 <div class="cardBox">
                                     <div class="content">
                                     <h2>01</h2>
-                                    <h3>Residential </h3>
-                                    <p> lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                                   
+                                    <p> If you have questions related to septic tanks,our FAQs may help you find the information you need.</p>
                                     <section className="slide__buttonContainer">
 
                                             <Link to="#" title="Button slide blue/green" class="button btnSlide btnBlueGreen">

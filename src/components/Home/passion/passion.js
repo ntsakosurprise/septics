@@ -29,8 +29,15 @@ class Passion extends Component{
 
                             <h2 className="home__passion--content-title">Waste Management</h2> 
                             <p className="home__passion--content-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            We enjoy hygienically clean environments,and although our work expose us to an array of germs,
+                            the love we have for collecting waste to mantain good hygiene is intense
 
+                            </p>
+
+                            <p className="home__passion--content-text">
+                           
+                            We have a lot fun while we do our work,in addition, 
+                            SouthSeptic uses equipment that protects Its employees against possible risks while rendering services. 
                             </p>
 
 
@@ -38,9 +45,15 @@ class Passion extends Component{
 
                         <section className="home__passion--content-bx2">
 
-                            <h2 className="home__passion--content-title">Waste Disposal</h2> 
+                            <h2 className="home__passion--content-title">Septic Tank Pumping</h2> 
                             <p className="home__passion--content-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            A clean environment is important in improving everyone's well being and reducing the possible threats to people's fragile health.
+                            </p>
+
+                            <p className="home__passion--content-text">
+                            
+                            we love septic tank pumping to protect you against an array of things including bacteria that may occur if the septic tank is not putmped.
+
 
                             </p>
 

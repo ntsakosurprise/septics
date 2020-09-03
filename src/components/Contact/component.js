@@ -3,10 +3,11 @@ import React, {Component} from 'react'
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
 import * as actions from './actions'
-
+import * as navigatorActions from '../ReduxFirstNavigator/actions' 
 import ContactForm from './contactform/contactform'
 import Touch from './touch/touch' 
-import ServiceReq from './servicereq/servicereq'
+import ServiceReq from './servicereq/servicereq' 
+import ProgressBarLinear from './progressbarlinear'
 // import Gmap from './gmap/gmap'
 
 
@@ -20,13 +21,36 @@ class Contact extends Component{
         super(props)
     }
 
-    componentWillMount(){
+   
+   
 
-        console.log('THE HEADER COMPONENT IS GOING TO MOUNT')
+  componentDidUpdate(){
+
+    const {contact} = this.props
+    const {isFetching,isProgressBar} = contact 
+
+    if(isProgressBar === true && isFetching === true){
+
+      document.body.style.overflow = 'hidden'
+      document.body.style.pointerEvents ='none'
+      document.body.style.opacity = '0.4'
+
+    }else{
+
+      document.body.style.overflow = 'visible'
+      document.body.style.pointerEvents ='all'
+      document.body.style.opacity = '1'
     }
+   
+  }
 
 
     render(){
+
+      const {actions,contact} = this.props 
+      const {isFetching,isProgressBar} = contact 
+     
+
 
         const streetViewConfig = {
             type: 'street',
@@ -92,9 +116,17 @@ class Contact extends Component{
             <article className="contact">
                  
                  <Touch />
-                 <ContactForm />
+                 <ContactForm actions={actions} contact={contact}  />
                  <strong className="clearfix" /> 
-                 <ServiceReq />
+                 <ServiceReq  />
+             
+                 {
+                                
+                                isProgressBar === true && isFetching === true
+                                    ? <ProgressBarLinear />
+                                    : <span>THE SERVER REQUEST IS FETCHING NOTHING</span>
+                            }
+
                  {/* <div className="page">
       
                     <div className="flexbox">
@@ -117,21 +149,23 @@ class Contact extends Component{
 
 }
 
+
 const mapStateToProps = (state)=>{
 
-    return{
-        state:{
-            ...state.history
-        }
-    }
+  const {contact} = state
+
+  return{
+     contact
+  }
 }
 
 const mapDispachToProps = (dispatch)=>{
 
-    return {
+  return {
 
-        actions: bindActionCreators({...actions},dispatch)
-    }
+      actions: bindActionCreators({...actions,...navigatorActions},dispatch)
+  }
 }
+
 
 export default connect(mapStateToProps,mapDispachToProps)(Contact)

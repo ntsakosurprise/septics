@@ -34,7 +34,7 @@ class Im extends  Component{
                                     <div class="content">
                                     <h2>01</h2>
                                     <h3>Residential </h3>
-                                    <p> lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                                    <p> SouthSeptic recognises the need and use of Septic  tanks in residential areas and has aligned it's services to   better serve this niche of the septic tanks market. </p>
                                     <section className="slide__buttonContainer">
 
                                             <Link to="#" title="Button slide blue/green" class="button btnSlide btnBlueGreen">

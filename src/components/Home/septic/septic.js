@@ -101,7 +101,7 @@ class Septic extends Component{
                     
                     {/* <span className="home__septic--welcome-text">Welcomes you</span> */}
 
-                    <div class="text">
+                    <div class="text welcome-text" data-aos="fade-up-right" data-aos-delay="1000">
                         <div class="text__line">
                             <p>South</p>
                             <p>Welcomes</p>
@@ -117,7 +117,9 @@ class Septic extends Component{
 
 
                 
-                <section className={"home__septic--banner "+(state.shouldShowBoxes ? "" : " home__septic--clipedBanner")}>
+                <section className={"home__septic--banner "+(state.shouldShowBoxes ? "" : " home__septic--clipedBanner")}
+                    
+                    >
                     
                     {state.shouldShowBoxes ? this.createBoxes() : null}
                 </section> 
@@ -131,10 +133,10 @@ class Septic extends Component{
                     </h2>
 
                     <ul className="home__septic--pledge-list">
-                        <li>Quality Service</li> 
-                        <li>Reliable Partner</li> 
-                        <li>Reliable Partner</li>
-                        <li>Reliable Partner</li>
+                        <li>Reliable service </li> 
+                        <li>Affordable prices for our services </li> 
+                        <li>Attentive to our clients' needs</li>
+                        <li>Proper equipment for septic tank pumping.</li>
                     </ul>
 
                 </section> 
@@ -160,7 +162,13 @@ class Septic extends Component{
                 </h2>
 
                 <figure className="home__septic--fig">
-                    <img src="/img/banner_1.jpg" className="home__septic--pik" /> 
+                    <img 
+                        src="/img/banner_1.jpg" 
+                        className="home__septic--pik"
+                        data-aos="fade"
+                        data-aos-delay="3000"
+                        data-aos-duration="10000"
+                        data-aos-easing="ease-in-out-cubic" /> 
                     <span className="home__septic--rec"></span>
                     <span className="home__septic--rec-2"></span>
                     <span className="home__septic--rec-3"></span>

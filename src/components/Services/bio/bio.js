@@ -48,8 +48,7 @@ class Bio extends Component{
                             <div>
 
                               <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                              labore et dolore magna aliqua.
+                              Our core service revolves around septic tanks cleaning and inspections,furthermore, we also have the team that focuses on other areas of Septic tank service.
 
 
                               </p>

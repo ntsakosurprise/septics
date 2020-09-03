@@ -40,7 +40,9 @@ class Pledge extends Component{
                             <div className="home__pledge--content">
 
                                 <p className="home__pledge--content-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                Our clients form an imperative part of our business and associated services,
+                                as a result,we promise to be always open to their needs and suggestions,and if any complaints arise,
+                                we will do our best to ensure that they are timely addressed and to the satisfaction of our clients.
 
                                 </p>
 

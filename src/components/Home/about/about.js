@@ -28,23 +28,23 @@ class About extends Component{
 
                     <div class="defilee__div defilee__div--special">
                         <img src="/img/about_2.jpg" alt="Avatar for user 2" />
-                        <p>Hello, I'm Steve.</p>
+                        <p>We love collecting waste.</p>
                     </div>
 
                     <div class="defilee__div defilee__div--special1 first">
                         <img src="/img/about_3.jpg" alt="Avatar for user 3" />
-                        <p>I'm the boss.</p>
+                        <p>We love keeping your septic tanks clean.</p>
                     </div>
 
                     <div class="defilee__div defilee__div--special3">
 
                         <img src="/img/about_4.jpg" alt="Avatar for user 4" />
-                        <p>One word - Warrior.</p>
+                        <p>We are based in Midrand, Gauteng </p>
                     </div>
 
                     <div class="defilee__div defilee__div--special4">
                         <img src="/img/about_5.jpg" alt="Avatar for user 5" />
-                        <p>Brave  Humble</p>
+                        <p>We are most active in Centurion,Austin,Mnandi,etc.</p>
                     </div>
 
                     <div class="defilee__div defilee__div--special1 ">
@@ -54,7 +54,7 @@ class About extends Component{
 
                     <div class="defilee__div">
                         <img src="/img/about_7.jpg" alt="Avatar for user 7" />
-                        <p>The Friendliest One</p>
+                        <p>We are passionate about septic pumping.</p>
                     </div>
 
                     <div class="defilee__div defilee__div--text">
@@ -63,12 +63,12 @@ class About extends Component{
 
                     <div class="defilee__div defilee__div--special3">
                         <img src="/img/about_8.jpg" alt="Avatar for user 8" />
-                        <p>Christina.</p>
+                        <p>We have fun while we do our work </p>
                     </div>
 
                     <div class="defilee__div defilee__div--special1">
                         <img src="/img/about_9.jpg" alt="Avatar for user 9" />
-                        <p>Howdy!</p>
+                        <p>We are a friendly professionals that love to pump-d-pump out the dirt  off your septic tanks.</p>
                     </div>
 
                 </section>
