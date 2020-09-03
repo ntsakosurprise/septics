@@ -8245,6 +8245,9 @@ p {
           clear: both;
           position: relative;
           left: 30%; } }
+      @media only screen and (max-width: 600px) {
+        .home__septic--pledge {
+          padding-top: 150px; } }
       .home__septic--pledge-title {
         position: relative; }
         .home__septic--pledge-title-o {
@@ -8296,7 +8299,7 @@ p {
       padding-left: 35%; }
       @media only screen and (max-width: 600px) {
         .home__septic--title {
-          top: 130px;
+          top: 280px;
           left: -15%; } }
       .home__septic--title-text {
         display: inline-block;
@@ -8341,11 +8344,11 @@ p {
     .home__septic--fig {
       width: 20rem;
       position: absolute;
-      top: 370px;
+      top: 425px;
       left: 20%; }
       @media only screen and (max-width: 600px) {
         .home__septic--fig {
-          top: 450px;
+          top: 585px;
           width: 15rem;
           left: 0; } }
     .home__septic--pik {
@@ -8388,9 +8391,9 @@ p {
       left: 40%; }
       @media only screen and (max-width: 600px) {
         .home__septic--shaderect {
-          top: 575px;
+          top: 765px;
           width: 5rem;
-          left: 2%; } }
+          left: 55%; } }
     .home__septic--shaderect-2 {
       width: 30rem;
       background-color: #FFF;
@@ -8401,9 +8404,9 @@ p {
       left: 38%; }
       @media only screen and (max-width: 600px) {
         .home__septic--shaderect-2 {
-          top: 620px;
+          top: 720px;
           width: 5rem;
-          left: 2%; } }
+          left: 55%; } }
     .home__septic--content {
       position: relative;
       margin-left: 35%;
@@ -8648,15 +8651,15 @@ p {
     position: relative; }
     @media only screen and (max-width: 1200px) {
       .home__passion {
-        height: 600px;
-        padding-bottom: 5rem; } }
+        height: 900px;
+        padding-bottom: 5rem;
+        margin-bottom: 150px; } }
     @media only screen and (max-width: 900px) {
       .home__passion {
-        height: 570px;
-        padding-bottom: 5rem; } }
+        height: 900px; } }
     @media only screen and (max-width: 600px) {
       .home__passion {
-        height: 700px; } }
+        height: 900px; } }
     @media only screen and (max-width: 450px) {
       .home__passion {
         height: 700px; } }
@@ -8744,6 +8747,9 @@ p {
   .home__choose {
     width: 100%;
     background-color: #FFF; }
+    @media only screen and (max-width: 1200px) {
+      .home__choose {
+        display: none; } }
     .home__choose--text {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -8786,10 +8792,13 @@ p {
     background-color: rgba(153, 153, 153, 0.1);
     height: 100vh;
     padding-top: 70px; }
+    @media only screen and (max-width: 1200px) {
+      .home__quote {
+        height: 600px;
+        padding-bottom: 5rem; } }
     @media only screen and (max-width: 900px) {
       .home__quote {
-        height: auto;
-        padding-bottom: 5rem; } }
+        height: 600px; } }
     .home__quote--box {
       background: url(/img/formbg.jpg) no-repeat center;
       box-shadow: -10px 10px 20px 1px rgba(0, 0, 0, 0.2);

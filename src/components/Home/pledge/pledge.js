@@ -14,7 +14,11 @@ class Pledge extends Component{
             <div className="home__pledge">
 
 
-                <p className="home__pledge--text">
+                <p className="home__pledge--text" 
+                                    data-aos="fade"
+                                    data-aos-delay="500"
+                                    data-aos-duration="5000"
+                                    data-aos-easing="ease-in-out-cubic">
                     
                     <span className="home__pledge--text-txt">Our pledge</span>
                 </p>
@@ -39,7 +43,10 @@ class Pledge extends Component{
                            
                             <div className="home__pledge--content">
 
-                                <p className="home__pledge--content-text">
+                                <p className="home__pledge--content-text"  data-aos="fade"
+                                    data-aos-delay="500"
+                                    data-aos-duration="5000"
+                                    data-aos-easing="ease-in-out-cubic">
                                 Our clients form an imperative part of our business and associated services,
                                 as a result,we promise to be always open to their needs and suggestions,and if any complaints arise,
                                 we will do our best to ensure that they are timely addressed and to the satisfaction of our clients.

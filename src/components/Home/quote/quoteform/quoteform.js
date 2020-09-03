@@ -99,6 +99,7 @@ class QuoteForm extends  Component{
                             
                            
                             placeholder: '....',
+
                             disabled: false
                             
                         }
@@ -213,7 +214,8 @@ class QuoteForm extends  Component{
 
     showPasswordBox(e){
 
-        e.preventDefault()
+        e.preventDefault() 
+        
         const changePassword = !this.state.changePassword
         this.setState({...this.state,changePassword:changePassword })
     }
@@ -221,6 +223,7 @@ class QuoteForm extends  Component{
     submitForm = (e)=>{
                 
             e.preventDefault() 
+            return 
             
             const {actions} = this.props
             const {sendUserProfileUpdate,unsetIsProfile} = actions 
@@ -344,11 +347,11 @@ class QuoteForm extends  Component{
 
     render(){
 
-            const {changePassword} = this.state 
-            const {firstName,lastName,isFetching,isProgressBar} = this.props 
-            let name = firstName ? `${firstName} ${lastName}` : ''
-            console.log('PROPS IN INFOUPDATE')
-            console.log(this.props)
+            // const {changePassword} = this.state 
+            // const {firstName,lastName,isFetching,isProgressBar} = this.props 
+            // let name = firstName ? `${firstName} ${lastName}` : ''
+            // console.log('PROPS IN INFOUPDATE')
+            // console.log(this.props)
           
             
        
@@ -359,7 +362,8 @@ class QuoteForm extends  Component{
 
                     <form className="form home__quote--form-cont">
                         
-                        <div className="home__quote--form-control">
+                        <div className="home__quote--form-control" 
+                       >
 
                             
 
@@ -370,14 +374,15 @@ class QuoteForm extends  Component{
                                 id = 'email'
                                 controlData={this.state.form.username}
                                 change={(control)=>this.updator(control)}
-                                placeHolder={name}
+                               
                             
                             />
 
 
                         </div>
 
-                        <div className="home__quote--form-control">
+                        <div className="home__quote--form-control" 
+                         >
 
                             
 
@@ -388,7 +393,7 @@ class QuoteForm extends  Component{
                                 id = 'username'
                                 controlData={this.state.form.email}
                                 change={(control)=>this.updator(control)}
-                                placeHolder={name}
+                               
                             
                             />
 
@@ -396,19 +401,18 @@ class QuoteForm extends  Component{
                         </div> 
 
 
-                        <div className="home__quote--form-control">
+                        <div className="home__quote--form-control"  >
 
                             
 
-                        <label className="home__quote--form-label">Message</label>
+                        <label className="home__quote--form-label" >Message</label>
                         <FormControl 
 
                             styles={{child:'home__quote--form-textarea',error: ''}}
                             id = 'message'
                             controlData={this.state.form.message}
                             change={(control)=>this.updator(control)}
-                            placeHolder={name}
-
+                           
                         />
 
 
@@ -424,24 +428,17 @@ class QuoteForm extends  Component{
                         
 
 
-                    <button onClick={(e)=>this.submitForm(e)} className="home__quote--form-submit" >Send</button>
+                    <button onClick={(e)=>this.submitForm(e)} className="home__quote--form-submit" 
+                     data-aos="flip-left"
+                     data-aos-delay="500"
+                     data-aos-duration="5000"
+                     data-aos-easing="ease-in-out-cubic">Send</button>
                        
                         
                     </form>
 
                     
-                    <div>
-
-                        {
-                            
-                            isProgressBar === true && isFetching === true
-                                ?  <ProgressBarLinear />
-                                : null
-                        }
-    
-                    
-                    </div>
-
+                   
                     </>
 
                     

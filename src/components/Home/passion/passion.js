@@ -25,7 +25,10 @@ class Passion extends Component{
                             
                     <div className="home__passion--content">
 
-                        <section className="home__passion--content-bx1">
+                        <section className="home__passion--content-bx1"  data-aos="fade"
+                                    data-aos-delay="500"
+                                    data-aos-duration="5000"
+                                    data-aos-easing="ease-in-out-cubic">
 
                             <h2 className="home__passion--content-title">Waste Management</h2> 
                             <p className="home__passion--content-text">
@@ -61,7 +64,10 @@ class Passion extends Component{
                         </section>
 
 
-                        <section className="home__passion--pik">
+                        <section className="home__passion--pik"  data-aos="fade"
+                                    data-aos-delay="2000"
+                                    data-aos-duration="7000"
+                                    data-aos-easing="ease-in-out-cubic">
                             <img src="/img/truck.jpg" className="home__passion--image" />
                         </section>
 

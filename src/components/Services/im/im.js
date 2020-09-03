@@ -49,7 +49,7 @@ class Im extends  Component{
                                     <div class="content">
                                     <h2>02</h2>
                                     <h3>Commercial </h3>
-                                    <p> lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                                    <p>A damaged septic tank could mean a loss of revenue for your commercial property, whichever line of business you are in, our services can help you eliminate problems that may be caused by your septic tanks</p>
                                     <section className="slide__buttonContainer">
 
                                             <Link to="#" title="Button slide blue/green" class="button btnSlide btnBlueGreen">

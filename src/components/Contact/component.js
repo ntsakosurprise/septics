@@ -124,7 +124,7 @@ class Contact extends Component{
                                 
                                 isProgressBar === true && isFetching === true
                                     ? <ProgressBarLinear />
-                                    : <span>THE SERVER REQUEST IS FETCHING NOTHING</span>
+                                    : null
                             }
 
                  {/* <div className="page">

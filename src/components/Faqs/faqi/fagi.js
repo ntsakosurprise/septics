@@ -40,11 +40,7 @@ class Faqi extends Component{
                 
                })}
 
-               <div>
-
-                   <Upload />
-               </div>
-            
+              
            </section>
         )
     }

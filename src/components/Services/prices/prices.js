@@ -36,8 +36,7 @@ class Prices extends  Component{
                                 <div>
 
                                     <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua.
+                                    We've defined our septic services prices according to the current standards in the industry and with the hope that you find them affordable. Below is a list of our current prices.
 
 
                                     </p>

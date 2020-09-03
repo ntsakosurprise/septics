@@ -39,6 +39,26 @@ class Septic extends Component{
             }
           });
 
+          TweenLite.to(".home__septic--banner", 1, {
+            y: 60,
+            yoyo: true,
+            opacity: 1, 
+            ease: "power1.inOut",
+            delay:4,
+            duration: 10
+           
+          }); 
+
+          TweenLite.to(".home__septic--title", 1, {
+            y: 60,
+            yoyo: true,
+            opacity: 1, 
+            ease: "power1.inOut",
+            delay:5,
+            duration: 10
+           
+          });
+
           TweenLite.set(".gsapbox",{
             scale: 0.1, 
             stagger: {
@@ -75,7 +95,7 @@ class Septic extends Component{
                 console.log('TTHE TIMEOUT HAS EXECTUED')
                 console.log(this.state.shouldShowBoxes)
             })
-        }.bind(this),50000)
+        }.bind(this),11000)
     }
 
     // killAnimation(){
@@ -118,7 +138,7 @@ class Septic extends Component{
 
                 
                 <section className={"home__septic--banner "+(state.shouldShowBoxes ? "" : " home__septic--clipedBanner")}
-                    
+                  
                     >
                     
                     {state.shouldShowBoxes ? this.createBoxes() : null}
@@ -141,25 +161,27 @@ class Septic extends Component{
 
                 </section> 
                 <strong className="clearfix"></strong>
-                <h2 className="home__septic--title">
-                    <span className="home__septic--title-text-we">
-                        <small>W</small><small className="home__septic--title-text-l">e</small>
-                    </span>
-                    <span  className="home__septic--title-text home__septic--title-text-ar">
-                        <small>are</small>
-                    </span> 
-                    <span  className="home__septic--title-text home__septic--title-text-a">
-                        <small>a</small>
-                    </span>
-                    <span  className="home__septic--title-text home__septic--title-text-w">
-                        <small>Waste management</small>
-                    </span>
-                    <span  className="home__septic--title-text home__septic--title-text-b">
-                        <small>business</small>
-                    </span>
-                    
-                    
-                </h2>
+               { state.shouldShowBoxes === false 
+                ? <h2 className="home__septic--title">
+                        <span className="home__septic--title-text-we">
+                            <small>W</small><small className="home__septic--title-text-l">e</small>
+                        </span>
+                        <span  className="home__septic--title-text home__septic--title-text-ar">
+                            <small>are</small>
+                        </span> 
+                        <span  className="home__septic--title-text home__septic--title-text-a">
+                            <small>a</small>
+                        </span>
+                        <span  className="home__septic--title-text home__septic--title-text-w">
+                            <small>Waste management</small>
+                        </span>
+                        <span  className="home__septic--title-text home__septic--title-text-b">
+                            <small>business</small>
+                        </span>
+                        
+                        
+                    </h2>
+                : null }
 
                 <figure className="home__septic--fig">
                     <img 

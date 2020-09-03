@@ -275,6 +275,8 @@ class ContactForm extends  Component{
     submitForm = (e)=>{
                 
             e.preventDefault() 
+
+            return
             
             const {actions} = this.props
             const {sendContactData} = actions 

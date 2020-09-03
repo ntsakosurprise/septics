@@ -35,7 +35,7 @@ class ServiceReq extends  Component{
                                            
                                             <h3>Our Values</h3>
                                             <div class="content-slantedcard-text">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                <p>SouthSeptic values trust and satisfaction of its clients. To ensure that clients get the level of satisfaction they expect as we serve them, we give them a platform to freely express themselves inorder to communicate anything they feel we need to do a certain way.</p>
                                             </div>
                                             <section className="slide__buttonContainer">
 

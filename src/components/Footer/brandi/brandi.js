@@ -32,7 +32,10 @@ const Brand = ()=>{
 
                             
 
-                            <nav className="footer__brand--social-nav">
+                            <nav className="footer__brand--social-nav" data-aos="fade"
+                                    data-aos-delay="1200"
+                                    data-aos-duration="10000"
+                                    data-aos-easing="ease-in-out-cubic">
                                 <Link to='/about' className="link footer__brand-imgs-links">
                                     <img src="/img/social/facebook.png" className="footer__brand-imgs" />
                                 </Link> 

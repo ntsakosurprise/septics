@@ -56,8 +56,10 @@ class Services extends Component{
                                      data-aos-duration="15000"
                                      data-aos-easing="ease-in-out-cubic">
                                         <section >
-                                            <h2 className="home__services--service-title">Service One</h2>
-                                            <p className="home__services--service-text">service details</p>
+                                            <h2 className="home__services--service-title">Septic Tank Inspection</h2>
+                                            <p className="home__services--service-text">
+                                                SouthSeptic provides this inspection service to help its clients detect likely issues before they overwhelm the septic tank and cause damage. 
+</p>
                                         </section>
                                         {/* <img src="https://assets.codepen.io/1025350/eleanor.jpg" alt="Eleanor from The Good Place" /> */}
                                     </div>
@@ -67,8 +69,8 @@ class Services extends Component{
                                     data-aos-duration="15000"
                                     data-aos-easing="ease-in-out-cubic">
                                     <section >
-                                            <h2 className="home__services--service-title">Service One</h2>
-                                            <p className="home__services--service-text">service details</p>
+                                            <h2 className="home__services--service-title">Septic Tank Pumping</h2>
+                                            <p className="home__services--service-text">The core of our service provision,  we offer this service to keep your septic tank clean and running smoothly.</p>
                                         </section>
                                     </div>
                                     <div className="home__services--service home__services--service-3"
@@ -77,8 +79,8 @@ class Services extends Component{
                                     data-aos-duration="15000"
                                     data-aos-easing="ease-in-out-cubic">
                                     <section >
-                                            <h2 className="home__services--service-title">Service One</h2>
-                                            <p className="home__services--service-text">service details</p>
+                                            <h2 className="home__services--service-title">Septic Tank Repairs</h2>
+                                            <p className="home__services--service-text">A damaged septic tank is almost always likely to happen at some point in its life span. Reach out to us to get yours fixed. </p>
                                         </section>
                                     </div>
                                     <div className="home__services--service home__services--service-4"
@@ -87,8 +89,8 @@ class Services extends Component{
                                     data-aos-duration="10000"
                                     data-aos-easing="ease-in-out-cubic">
                                     <section>
-                                        <h2 className="home__services--service-title">Service One</h2>
-                                            <p className="home__services--service-text">service details</p>
+                                        <h2 className="home__services--service-title">Septic Tank Replacement</h2>
+                                            <p className="home__services--service-text">Our professionals are experts in handling septic tanks, their expertise includes  installing and replacing septic tanks,we are a call away for your need.</p>
                                         </section>
                                     </div>
                                 </div>

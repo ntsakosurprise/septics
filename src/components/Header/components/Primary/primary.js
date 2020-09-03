@@ -55,7 +55,8 @@ class Primary extends React.Component{
             <SlidingMenu slideClass={slideClass} onClick={this.handleClick}>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contact</Link> 
+              <Link to="/services">Services</Link>
               <Link to="/faqs">Faqs</Link>
               <Link to="/privacy">Privacy</Link>
             </SlidingMenu>
