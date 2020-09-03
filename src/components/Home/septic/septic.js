@@ -1,6 +1,6 @@
 
 import React,{Component} from 'react'
-import { TweenLite, Power4 } from "gsap";
+import { TweenLite,TweenMax, Power4,Linear,gsap } from "gsap";
 // import Benefits from './benefits/benefits' 
 
 
@@ -24,6 +24,7 @@ class Septic extends Component{
     componentDidMount(){
         // use the node ref to create the animation
         // this.myTween = TweenLite.to(this.myElement, 1, {x: 100, y: 100});
+        
 
         TweenLite.to(".gsapbox", 1, {
             scale: 0.1, 
@@ -39,15 +40,29 @@ class Septic extends Component{
             }
           });
 
-          TweenLite.to(".home__septic--banner", 1, {
-            y: 60,
-            yoyo: true,
-            opacity: 1, 
-            ease: "power1.inOut",
-            delay:4,
-            duration: 10
-           
-          }); 
+        //   TweenMax.fromTo(".home__septic--banner", 1, {opacity: 0, duration: 3000, y: 50}, {opacity: 1, y: 0});
+
+        //   gsap.fromTo(".home__septic--banner", {
+        //     opacity: 0
+        // }, {
+        //     duration: 10,
+        //     opacity: 1,
+        //     ease: "Linear.ease",
+        //     // scrollTrigger: {
+        //     //     id: `section-${index+1}`,
+        //     //     trigger: el,
+        //     //     start: 'top center+=100',
+        //     //     toggleActions: 'play none none reverse'
+        //     // }
+        // });
+
+        //   TweenLite.fromTo(".home__septic--banner",1,{
+
+        //     duration: 8,
+        //     from: {opacity: 0},
+        //     to: {opacity: 1},
+        //     ease: "Linear.ease"
+        //   }); 
 
           TweenLite.to(".home__septic--title", 1, {
             y: 60,
@@ -107,7 +122,23 @@ class Septic extends Component{
     
     render(){
 
-        const {state} = this
+        const {state} = this 
+        const anStyles = {
+
+            ["data-aos"]:"fade",
+            ["data-aos-delay"]: "1000",
+            ["data-aos-duration"]:"10000",
+            ["data-aos-easing"]: "ease-in-out-cubic"
+
+        }
+
+        const aStyles = {
+
+            ["data-aos"]:"fade",
+            ["data-aos-duration"]:"20000",
+            ["data-aos-easing"]: "ease-in-out-cubic"
+
+        }
 
         console.log('THE COMPONENT HAS RERENDERED')
         console.log(state)
@@ -138,7 +169,7 @@ class Septic extends Component{
 
                 
                 <section className={"home__septic--banner "+(state.shouldShowBoxes ? "" : " home__septic--clipedBanner")}
-                  
+                  {...aStyles}
                     >
                     
                     {state.shouldShowBoxes ? this.createBoxes() : null}
@@ -162,7 +193,7 @@ class Septic extends Component{
                 </section> 
                 <strong className="clearfix"></strong>
                { state.shouldShowBoxes === false 
-                ? <h2 className="home__septic--title">
+                ? <h2 className="home__septic--title" {...anStyles}>
                         <span className="home__septic--title-text-we">
                             <small>W</small><small className="home__septic--title-text-l">e</small>
                         </span>

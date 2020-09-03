@@ -55,7 +55,7 @@ class Passion extends Component{
 
                             <p className="home__passion--content-text">
                             
-                            we love septic tank pumping to protect you against an array of things including bacteria that may occur if the septic tank is not putmped.
+                            we love septic tank pumping to protect you against an array of things including bacteria that may occur if the septic tank is not pumped.
 
 
                             </p>

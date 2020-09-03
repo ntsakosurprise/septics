@@ -42,7 +42,7 @@ class Clients extends  Component{
                                 <h4 className="services__clients--sign-pos">1</h4> 
                                 <h5 className="services__clients--sign-title">Odour</h5> 
                                 <figure className="services__clients--sign-pik">
-                                    <img src="/img/tank_sign_1.jpg" />
+                                    <img src="/img/tank_s1.jpg" />
                                 </figure>
                                 <div className="services__clients--sign-txt"> 
 
@@ -66,7 +66,7 @@ class Clients extends  Component{
                             <h4 className="services__clients--sign-pos">2</h4> 
                             <h5 className="services__clients--sign-title">Pooling Water</h5> 
                             <figure className="services__clients--sign-pik">
-                                <img src="/img/tank_sign_1.jpg" />
+                                <img src="/img/tank_s2.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
@@ -89,7 +89,7 @@ class Clients extends  Component{
                             <h4 className="services__clients--sign-pos">3</h4> 
                             <h5 className="services__clients--sign-title"> Slow drains</h5> 
                             <figure className="services__clients--sign-pik">
-                                <img src="/img/tank_sign_1.jpg" />
+                                <img src="/img/tank_s4.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
@@ -112,7 +112,7 @@ class Clients extends  Component{
                             <h4 className="services__clients--sign-pos">4</h4> 
                             <h5 className="services__clients--sign-title">Sewer backup</h5> 
                             <figure className="services__clients--sign-pik">
-                                <img src="/img/tank_sign_1.jpg" />
+                                <img src="/img/tank_s3.jpg" />
                             </figure>
                             <div className="services__clients--sign-txt"> 
 
