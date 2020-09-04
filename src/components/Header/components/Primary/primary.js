@@ -20,6 +20,33 @@ class Primary extends React.Component{
       this.setState({toggleMenu: !this.state.toggleMenu});
     }
 
+    componentDidUpdate(){
+
+        const {toggleMenu} = this.state
+        
+    
+        if(toggleMenu === true){
+    
+          document.body.style.overflow = 'hidden'
+        //   document.body.style.pointerEvents ='none'
+        //   document.body.style.opacity = '0.4'
+    
+        }else{
+    
+          document.body.style.overflow = 'visible'
+        //   document.body.style.pointerEvents ='all'
+        //   document.body.style.opacity = '1'
+        }
+       
+      }
+
+    componentWillMount(){
+
+        document.body.style.overflow = 'visible'
+    }
+    
+    
+
    
     
     render(){
