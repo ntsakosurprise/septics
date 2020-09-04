@@ -59,7 +59,11 @@ class Bio extends Component{
                       
                     </div>
 
-                    <div className="services__bio--dd">
+                    <div className="services__bio--dd" 
+                    data-aos="fade"
+                    data-aos-delay="500"
+                    data-aos-duration="15000"
+                    data-aos-easing="ease-in-out-cubic">
 
                 
                             <span className="services__bio--dd-bar"></span>

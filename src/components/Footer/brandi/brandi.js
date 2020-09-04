@@ -12,16 +12,33 @@ const Brand = ()=>{
 
             <div className="footer__brand">
 
-                <section className="footer__brand-request">
+                <section className="footer__brand-request"
+                 data-aos="fade-up-right"
+                 data-aos-delay="1000"
+                 data-aos-duration="15000"
+                 data-aos-easing="ease-in-out-cubic">
                     <button className="footer__brand-btn">Request Service</button>
                 </section>
 
                 <section className="footer__brand--sok">
 
                     <div className="footer__brand--sok-qrs">
-                        <p className="footer__brand--squares footer__brand--squares-1"></p>
-                        <p className="footer__brand--squares footer__brand--squares-2"></p>
-                        <p className="footer__brand--squares footer__brand--squares-3"></p>
+                        <p className="footer__brand--squares footer__brand--squares-1" 
+                         data-aos="zoom-out"
+                         data-aos-delay="1000"
+                         data-aos-duration="15000"
+                         data-aos-easing="ease-in-out-cubic"></p>
+                        <p className="footer__brand--squares footer__brand--squares-2" 
+                         data-aos="zoom-out-left"
+                         data-aos-delay="1500"
+                         data-aos-duration="15000"
+                         data-aos-easing="ease-in-out-cubic"></p>
+                        <p className="footer__brand--squares footer__brand--squares-3" 
+
+                         data-aos="zoom-out-right"
+                         data-aos-delay="2000"
+                         data-aos-duration="15000"
+                         data-aos-easing="ease-in-out-cubic"></p>
                     </div>
                     <div className="footer__brand--sok-social">
 
@@ -81,10 +98,12 @@ const Brand = ()=>{
             
                 <div className="footer__brand-info">
                     <nav>
-                        <Link to='/faqs' className="link footer__brand-links footer__brand-hanging">
+                        <Link to='/faqs' className="link footer__brand-links footer__brand-hanging" 
+                        >
                             Faqs
                         </Link> 
-                        <Link to='/privacy' className="link footer__brand-links footer__brand-hanging">
+                        <Link to='/privacy' className="link footer__brand-links footer__brand-hanging"
+                      >
                             Privacy
                         </Link>
                        

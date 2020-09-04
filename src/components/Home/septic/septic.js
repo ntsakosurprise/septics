@@ -1,6 +1,7 @@
 
 import React,{Component} from 'react'
 import { TweenLite,TweenMax, Power4,Linear,gsap } from "gsap";
+
 // import Benefits from './benefits/benefits' 
 
 
@@ -11,12 +12,16 @@ class Septic extends Component{
     constructor(props){
         super(props);
         // reference to the DOM node
+        // this.septic = null 
+        // this.welcome = null 
+        
         this.numbBoxes = 40
         this.myElement = null
         // reference to the animation
         this.myTween = null 
         this.state = {
-            shouldShowBoxes: true
+            shouldShowBoxes: true,
+            activeText: false,
         }
        
     }
@@ -83,7 +88,11 @@ class Septic extends Component{
             }
           });
 
-          this.cancellAnimation()
+          this.cancellAnimation() 
+          this.startTextAnim()
+         
+
+          
     }
 
 
@@ -104,7 +113,8 @@ class Septic extends Component{
         setTimeout(function(){
 
             this.setState({
-                shouldShowBoxes: false
+                shouldShowBoxes: false,
+                activeText: true,
             },()=>{
 
                 console.log('TTHE TIMEOUT HAS EXECTUED')
@@ -112,6 +122,46 @@ class Septic extends Component{
             })
         }.bind(this),11000)
     }
+
+    startTextAnim(){
+
+        setTimeout(function(){
+
+            this.setState({
+                activeText: true,
+            },()=>{
+
+                this.animateWelcomeText()
+            })
+        }.bind(this),10000) 
+    }
+    
+
+    animateWelcomeText(){
+
+      
+        setInterval(function(){
+
+            const {activeText} = this.state 
+           
+    
+
+            // let active = ''
+            // if(this.state.activeText === 'septic'){
+
+            //     active = 'welcome'
+
+            // }else{
+
+            //     active = 'septic'
+            // }
+
+            this.setState({
+                activeText: !activeText
+            })
+        }.bind(this),5000)
+    }
+
 
     // killAnimation(){
 
@@ -153,13 +203,13 @@ class Septic extends Component{
                     {/* <span className="home__septic--welcome-text">Welcomes you</span> */}
 
                     <div class="text welcome-text" data-aos="fade-up-right" data-aos-delay="1000">
-                        <div class="text__line">
-                            <p>South</p>
-                            <p>Welcomes</p>
+                        <div className={state.activeText ? 'text__line text__line__hover' : "text__line"}>
+                            <p className="first__match_1">South</p>
+                            <p className="first__match_2">Welcomes</p>
                         </div>
-                        <div class="text__line">
-                            <p>Septic</p>
-                            <p>You</p>
+                        <div className={state.activeText ? 'text__line text__line__hover' : "text__line"}>
+                            <p className="first__match_1">Septic</p>
+                            <p className="first__match_2">You</p>
                         </div>
                         
                     </div>
@@ -219,8 +269,8 @@ class Septic extends Component{
                         src="/img/banner_1.jpg" 
                         className="home__septic--pik"
                         data-aos="fade"
-                        data-aos-delay="3000"
-                        data-aos-duration="10000"
+                        data-aos-delay="1000"
+                        data-aos-duration="6000"
                         data-aos-easing="ease-in-out-cubic" /> 
                     <span className="home__septic--rec"></span>
                     <span className="home__septic--rec-2"></span>
@@ -237,7 +287,10 @@ class Septic extends Component{
 
                         <span>Ab</span>
                         <span>ou</span>
-                        <span>t</span>
+                        <span style={{
+                            display: "inline-block",
+                            marginRight: '3rem'
+                            }}>t</span>
                         <span>u</span>
                         <span>s</span>
                     

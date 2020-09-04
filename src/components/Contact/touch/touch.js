@@ -38,16 +38,28 @@ class Touch extends Component{
 
            <section className="contact__touch">
 
-                    <h2 className="contact__touch--title">
+                    <h2 className="contact__touch--title" 
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="15000"
+                    data-aos-easing="ease-in-out-cubic">
                         <span className="contact__touch--title-primary">Connect</span> 
                         <span className="contact__touch--title-secondary">With</span>
                         <small className="contact__touch--circle-1"></small>
                         <small className="contact__touch--circle-2"></small>
                     </h2>
 
-                    <h3 className="contact__touch--mail">info@southseptic.co.za</h3>
+                    <h3 className="contact__touch--mail" 
+                    data-aos="fade-up-left"
+                    data-aos-delay="500"
+                    data-aos-duration="15000"
+                    data-aos-easing="ease-in-out-cubic">info@southseptic.co.za</h3>
 
-                    <div className="bx-raised-1 contact__touch--content">
+                    <div className="bx-raised-1 contact__touch--content" 
+                    data-aos="fade"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out-cubic">
 
                 
                             <h4>Contacts</h4>

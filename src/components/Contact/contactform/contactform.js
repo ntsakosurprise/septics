@@ -382,7 +382,11 @@ class ContactForm extends  Component{
 
                     <section className="contact__mail">
 
-                        <form className="form contact__mail--form-cont">
+                        <form className="form contact__mail--form-cont" 
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        data-aos-duration="15000"
+                        data-aos-easing="ease-in-out-cubic">
                             
                             <div className="contact__mail--form-control">
 

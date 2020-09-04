@@ -35,7 +35,11 @@ class Clients extends  Component{
 
                         
 
-                       <section className="services__clients--sign">
+                       <section className="services__clients--sign" 
+                       data-aos="fade-down"
+                       data-aos-delay="500"
+                       data-aos-duration="9000"
+                       data-aos-easing="ease-in-out-cubic">
                             
 
                 

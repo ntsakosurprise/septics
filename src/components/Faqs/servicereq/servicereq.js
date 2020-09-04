@@ -27,7 +27,11 @@ class ServiceReq extends  Component{
 
                     <section className="services__clients">
 
-                        <div class="section-slantedcard">
+                        <div class="section-slantedcard" 
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        data-aos-duration="15000"
+                        data-aos-easing="ease-in-out-cubic">
                                 <div class="content-slantedcard">
                                     <div style={{position: "relative"}}>
                                         <div class="section-slantedcard-card section-slantedcard-bottom"></div>

@@ -20,7 +20,7 @@ class Services extends Component{
                  data-aos-easing="ease-in-out-cubic">
                     
                     <div class="text">
-                        <div class="text__line">
+                        <div class="text__line ">
                             <p>Our</p>
                             <p>We'd like</p>
                         </div>

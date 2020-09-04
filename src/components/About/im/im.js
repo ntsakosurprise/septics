@@ -26,7 +26,11 @@ class Im extends  Component{
 
                     <section className="about__im">
 
-                       <div className="about__im--lg"></div>
+                       <div className="about__im--lg"  
+                       data-aos="fade"
+                         data-aos-delay="1000"
+                         data-aos-duration="15000"
+                         data-aos-easing="ease-in-out-cubic"></div>
                        <div className="about__im--sm"></div>
                     </section>
 
