@@ -6,8 +6,10 @@ import * as actions from './actions'
 
 import Search from './search/search'
 import Identity from './identity/identity' 
-import Septic from './septic/septic'
+import Septic from './septic/septic' 
+import Contact from './contact/contact'
 import Choose from './choose/choose'
+import Gallery from './gallery/gallery'
 import Goal from './goal/goal'
 import Quote from  './quote/quote'
 import Pledge from  './pledge/pledge'
@@ -15,7 +17,7 @@ import Passion from  './passion/passion'
 import About from './about/about'
 import Services from './services/services'
 import Jobdash from './jobdash/jobdash'
-import Top from './top/top'
+import Top from './gallery/gallery'
 import Employer from './employer/employer'
 import Candidate from './candidate/candidate'
 
@@ -52,7 +54,11 @@ class Home extends Component{
                         <Septic />
                     </div>
 
+                    <Contact />
+
                     <About />
+
+                    <Gallery />
 
                     <Services />
 

@@ -196,8 +196,8 @@ class Septic extends Component{
         return(
 
             <div className="home__septic">
-
-
+                
+                
                 <section className="home__septic--welcome">
                     
                     {/* <span className="home__septic--welcome-text">Welcomes you</span> */}
@@ -213,6 +213,20 @@ class Septic extends Component{
                         </div>
                         
                     </div>
+
+                    <section className="home__septic--standout-text">
+                        <p>
+                       
+                        Southseptic PTY Limited is a sewage removal company that focuses on emptying septic tanks 
+                        using a truck fitted with a vuccum stystem to effectively pump out sewage waste.
+                        <span className="home__septic--standout-text-bar1"></span>
+                        <span className="home__septic--standout-text-bar2"></span>
+ 
+
+
+                        </p>
+                    </section>
+
 
                 </section>
 
@@ -251,7 +265,7 @@ class Septic extends Component{
                             <small>are</small>
                         </span> 
                         <span  className="home__septic--title-text home__septic--title-text-a">
-                            <small>a</small>
+                            <small>enviromentally Friendly</small>
                         </span>
                         <span  className="home__septic--title-text home__septic--title-text-w">
                             <small>Waste management</small>
@@ -264,14 +278,14 @@ class Septic extends Component{
                     </h2>
                 : null }
 
-                <figure className="home__septic--fig">
+                <figure className="home__septic--fig ">
                     <img 
-                        src="/img/banner_1.jpg" 
+                        src="/img/tank_s1.jpg" 
                         className="home__septic--pik"
                         data-aos="fade"
                         data-aos-delay="1000"
                         data-aos-duration="6000"
-                        data-aos-easing="ease-in-out-cubic" /> 
+                        data-aos-easing="ease-in-out-cubic" alt="Southseptic-welcome-image" /> 
                     <span className="home__septic--rec"></span>
                     <span className="home__septic--rec-2"></span>
                     <span className="home__septic--rec-3"></span>

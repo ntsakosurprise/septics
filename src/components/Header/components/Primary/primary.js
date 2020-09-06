@@ -43,7 +43,9 @@ class Primary extends React.Component{
     componentWillMount(){
 
         document.body.style.overflow = 'visible'
-    }
+    } 
+
+    
     
     
 

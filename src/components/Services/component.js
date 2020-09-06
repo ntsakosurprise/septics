@@ -47,7 +47,7 @@ class Services extends Component{
                 <Bio />
                 <strong className="clearfix" /> 
                 <Clients />
-                <Prices />
+                {/* <Prices /> */}
                 <ServiceReq />
                
              </article>

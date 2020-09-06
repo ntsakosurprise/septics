@@ -81,6 +81,7 @@ const Brand = ()=>{
 
                 <div className="footer__brand-copy footer__brand-offsets">
                     <span className="mg-left-fl-bt font-fd-xx-tn fg-light">South Septic Tanks 2020</span>
+                  
                 </div>
                 <div className="footer__brand-main footer__brand-offsets">
                     <nav>

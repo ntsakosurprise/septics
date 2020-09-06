@@ -65,7 +65,7 @@ class Passion extends Component{
 
 
                         <section className="home__passion--pik"  data-aos="fade"
-                                    data-aos-delay="2000"
+                                 
                                     data-aos-duration="7000"
                                     data-aos-easing="ease-in-out-cubic">
                             <img src="/img/truck.jpg" className="home__passion--image" />
