@@ -48,7 +48,7 @@ class Gallery extends Component{
                             data-aos-easing="ease-in-out-cubic" alt="Southseptic-gallery-image" /> 
                     </figure>
 
-                    <figure className="home__gallery--fig home__gallery--f4">
+                    {/* <figure className="home__gallery--fig home__gallery--f4">
                         <img 
                             src="/img/gala_4.jpg" 
                             className="home__gallery--pik"
@@ -56,7 +56,7 @@ class Gallery extends Component{
                             data-aos-delay="1000"
                             data-aos-duration="6000"
                             data-aos-easing="ease-in-out-cubic" alt="Southseptic-gallery-image" /> 
-                    </figure>
+                    </figure> */}
                 </section>
 
                

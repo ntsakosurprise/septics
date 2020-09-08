@@ -82,7 +82,7 @@ class Contact extends Component{
 
                         <section>
                             <p className="home__contact--locations-adtext">
-                            42 Dane Road, Glen Austin, AH, Midrand, 1685  P.O Box 13474, Vorna Valley, Midrand, 1686
+                             As we grow our good reputation,we'd like to involve you,and we are simply a call away.
                             </p>
                         </section>
 

@@ -258,20 +258,20 @@ class Septic extends Component{
                 <strong className="clearfix"></strong>
                { state.shouldShowBoxes === false 
                 ? <h2 className="home__septic--title" {...anStyles}>
-                        <span className="home__septic--title-text-we">
-                            <small>W</small><small className="home__septic--title-text-l">e</small>
-                        </span>
+                        {/* <span className="home__septic--title-text-we">
+                            <small>enviromentally</small><small className="home__septic--title-text-l">e</small>
+                        </span> */}
                         <span  className="home__septic--title-text home__septic--title-text-ar">
-                            <small>are</small>
+                            <small>enviromentally</small>
                         </span> 
                         <span  className="home__septic--title-text home__septic--title-text-a">
-                            <small>enviromentally Friendly</small>
+                            <small>Friendly</small>
                         </span>
                         <span  className="home__septic--title-text home__septic--title-text-w">
-                            <small>Waste management</small>
+                            <small>Waste</small>
                         </span>
                         <span  className="home__septic--title-text home__septic--title-text-b">
-                            <small>business</small>
+                            <small>Management</small>
                         </span>
                         
                         
@@ -295,6 +295,22 @@ class Septic extends Component{
 
                 <div className="home__septic--shaderect"></div>
                 <div className="home__septic--shaderect-2"></div> 
+
+                <figure className="home__septic--fig-2 ">
+                    <img 
+                        src="/img/gala_4.jpg" 
+                        className="home__septic--pik-2"
+                        data-aos="fade"
+                        data-aos-delay="1000"
+                        data-aos-duration="6000"
+                        data-aos-easing="ease-in-out-cubic" alt="Southseptic-welcome-image" /> 
+                    <span className="home__septic--rec"></span>
+                    <span className="home__septic--rec-2"></span>
+                    <span className="home__septic--rec-3"></span>
+                    <span className="home__septic--rec-4"></span>
+
+                </figure>
+
 
                 <section className="home__septic--about">
                     <h1>
