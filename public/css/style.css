@@ -8904,10 +8904,7 @@ p {
         height: 900px; } }
     @media only screen and (max-width: 600px) {
       .home__passion {
-        height: 900px; } }
-    @media only screen and (max-width: 450px) {
-      .home__passion {
-        height: 700px; } }
+        height: 1000px; } }
     .home__passion--text {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -8955,6 +8952,9 @@ p {
         @media only screen and (max-width: 450px) {
           .home__passion--content-bx1 {
             width: 90%; } }
+        @media only screen and (max-width: 360px) {
+          .home__passion--content-bx1 {
+            width: 85%; } }
       .home__passion--content-bx2 {
         width: 60%;
         margin-left: 35%; }
@@ -8962,6 +8962,9 @@ p {
           .home__passion--content-bx2 {
             width: 90%;
             margin-left: 10%; } }
+        @media only screen and (max-width: 360px) {
+          .home__passion--content-bx2 {
+            width: 85%; } }
       .home__passion--content-title {
         margin-bottom: 2rem;
         font-size: 2.1rem; }
@@ -8976,11 +8979,16 @@ p {
         .home__passion--pik {
           width: 40rem;
           position: relative;
-          top: 2px;
-          right: 10%; } }
+          top: -280px;
+          right: 60%; } }
       @media only screen and (max-width: 900px) {
         .home__passion--pik {
-          width: 30rem; } }
+          width: 30rem;
+          top: -200px;
+          right: 38%; } }
+      @media only screen and (max-width: 768px) {
+        .home__passion--pik {
+          right: 55%; } }
       @media only screen and (max-width: 600px) {
         .home__passion--pik {
           width: 20rem;

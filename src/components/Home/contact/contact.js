@@ -78,7 +78,7 @@ class Contact extends Component{
 
                     <div className="home__contact--locations">
 
-                        <h4 className="home__contact--locations-title">Address</h4>
+                        <h4 className="home__contact--locations-title">Reach Out</h4>
 
                         <section>
                             <p className="home__contact--locations-adtext">
