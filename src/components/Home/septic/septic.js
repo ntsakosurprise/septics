@@ -202,14 +202,24 @@ class Septic extends Component{
                     
                     {/* <span className="home__septic--welcome-text">Welcomes you</span> */}
 
-                    <div class="text welcome-text" data-aos="fade-up-right" data-aos-delay="1000">
-                        <div className={state.activeText ? 'text__line text__line__hover' : "text__line"}>
+                    <div class="welcome-text" data-aos="fade-up-right" data-aos-delay="1000">
+                        {/* <div className={state.activeText ? 'text__line text__line__hover' : "text__line"}>
                             <p className="first__match_1">South</p>
                             <p className="first__match_2">Welcomes</p>
                         </div>
                         <div className={state.activeText ? 'text__line text__line__hover' : "text__line"}>
                             <p className="first__match_1">Septic</p>
                             <p className="first__match_2">You</p>
+                        </div> */}
+
+                        <div className="stext">
+                            <div className="stext__textslider--outer">
+                                <div className="stext__textslider--inner">
+                                <p>South Septic</p>
+                                <p>Welcomes you</p>
+                               
+                                </div>
+                            </div>
                         </div>
                         
                     </div>

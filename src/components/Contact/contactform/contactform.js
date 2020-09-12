@@ -276,7 +276,7 @@ class ContactForm extends  Component{
                 
             e.preventDefault() 
 
-            return
+            
             
             const {actions} = this.props
             const {sendContactData} = actions 
@@ -348,7 +348,7 @@ class ContactForm extends  Component{
         
     componentDidUpdate(){
         
-                console.log()
+                
                 const {contact,actions} = this.props 
                 const {isActionSuccessful,isFetcing} = contact
                 const  {removeNotification} = actions 

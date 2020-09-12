@@ -5,6 +5,7 @@ import {BrowserRouter as Router,Link} from 'react-router-dom';
 import Icon from '@material-ui/core/Icon';
 import { withStyles } from '@material-ui/core/styles'
 import DashboardIcon from '@material-ui/icons/Dashboard';
+import ContactIcon from '@material-ui/icons/ContactPhone'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import HistoryIcon from '@material-ui/icons/History';
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -32,16 +33,16 @@ class Contact extends Component{
 
                         <section className="home__contact--i">
                             <div className="home__contact--i-icon">
-                                <Icon><DashboardIcon /></Icon>
+                                <Icon><ContactIcon /></Icon>
                             </div>
                             <div className="home__contact--i-content">
                                 <section className="home__contact--i-cont-i">
-                                    <span>012 541 6633</span>
+                                    <span><a href="tel:0749159974">0749159974</a></span>
                                     <small>Mobile</small>
                                 </section>
 
                                 <section className="home__contact--i-cont-i">
-                                    <span>012 541 6633</span>
+                                    <span><a href="tel:0670245492">0670245492</a></span>
                                     <small>Mobile</small>
                                 </section>
                                
@@ -109,6 +110,119 @@ class Contact extends Component{
 
                         </section>
                     </div>
+
+                </section>
+
+                <section className="home__story">
+
+                        <div className="home__story--side1">
+
+                            <section className="home__story--side1-tri">
+                                <span>The Story OF us</span>
+                            </section>
+
+                            <section className="home__story--side1-cir">
+                                <span>How We Came To bE</span>
+                                <small>Why we've started SouthSeptic</small>
+                            </section>
+                        </div>
+
+                        <div className="home__story--side2">
+
+                            <section>
+                                <div className="home__story--side2-i">
+                                    <section className="home__story--side2-i-head">
+                                        <small>1.</small><span>Septic Tank Pumping Need</span>
+                                    </section>
+                                    <section className="home__story--side2-i-body">
+                                        <p>Septic tank pumping has become essential especially in rural and under developed and developed areas that are not connected to a sewage system.
+                                        </p>
+                                    </section>
+                                </div>
+
+                                <div className="home__story--side2-i">
+                                    <section className="home__story--side2-i-head">
+                                        <small>2.</small><span>Human Waste Disposal</span>
+                                    </section>
+                                    <section className="home__story--side2-i-body">
+                                        <p>Homes and buildings not connected to a municipal or city sewage system requires a method to get rid of human waste (feces and urine)
+                                        </p>
+                                    </section>
+                                </div>
+
+                                <div className="home__story--side2-i-al">
+                                    <section className="home__story--side2-i-al-head">
+                                        <span>What is a septic tank?</span>
+                                    </section>
+                                    <section className="home__story--side2-i-al-body">
+                                        <p>A septic tank is a small sewage treatment made of brick work, fiberglass, concrete, plastic or pvc to collect waste from domestic household and commercial property.
+                                        </p>
+                                    </section>
+                                </div>
+
+
+                            </section>
+
+                            
+
+
+                        </div>
+
+                        <strong className="clearfix" />
+
+                        <article className="home__story--locations">
+
+                             <h3 className="home__story--locations-head">Locations Our Services OuR Most Rendered</h3>
+
+                             <section className="home__story--locations-loks">
+
+               
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn1"> Glen Austin</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn2">Johannesburg</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Kyalami</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Pretoria</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Centurion</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Brits</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Hartebeespoort</button>
+                                    </div>
+
+                                </section>
+
+                                <section className="home__story--locations-action">
+                                    <span>Call Us Today for the cheapest quotes!</span>
+                                        <p>
+                                            <small><span>+</span><a href="tel:0749159974">0749159974</a></small>
+                                            <small><span>+</span><a href="tel:0670245492">0670245492</a></small>
+                                        </p>
+                                    </section>
+                                <strong className="clearfix" />
+
+
+
+                              
+
+
+                            </article>
+
 
                 </section>
                 

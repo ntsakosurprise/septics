@@ -119,12 +119,29 @@ class Contact extends Component{
                  <ContactForm actions={actions} contact={contact}  />
                  <strong className="clearfix" /> 
                  <ServiceReq  />
+                 {/* <section className="site__progressbar">
+                   <div className="site__progressbar-container">
+
+                    <ProgressBarLinear />
+
+                   </div>
+                   
+                 </section> */}
              
                  {
                                 
-                                isProgressBar === true && isFetching === true
-                                    ? <ProgressBarLinear />
-                                    : null
+                                // isProgressBar === true && isFetching === true
+                                //     ? <section lassName="site__progressbar">
+
+                                //         <div className="site__progressbar-container">
+
+                                //             <ProgressBarLinear />
+
+                                //         </div>
+
+
+                                //     </section>
+                                //     : null
                             }
 
                  {/* <div className="page">

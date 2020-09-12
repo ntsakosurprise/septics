@@ -73,17 +73,13 @@ function FacebookProgress(props) {
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: 'transparent',
-    height: '5px',
-    width: '320px',
-    position: 'fixed',
-    zIndex: 2000, 
-    bottom: '1rem',
-    left: '1em',
-    boxSizing: 'border-box',
-    padding: '4px'
-
-    
+    backgroundColor: 'white',
+    height: 0,
+    width: '100%',
+    position: 'relative',
+    // bottom: 0,
+    // top: '55vh',
+    zIndex: 20001
   },
 
   margin: {
@@ -94,7 +90,7 @@ const useStyles = makeStyles(theme => ({
   bar:{
 
     position: 'relative',
-    top: '42vh',
+    // top: '42vh',
     backgroundColor: 'yellow'
 
 

@@ -19,7 +19,7 @@ class Services extends Component{
                  data-aos-duration="10000"
                  data-aos-easing="ease-in-out-cubic">
                     
-                    <div class="text">
+                    {/* <div class="text">
                         <div class="text__line ">
                             <p>Our</p>
                             <p>We'd like</p>
@@ -35,6 +35,16 @@ class Services extends Component{
                         <div class="text__line">
                             <p>expertise</p>
                             <p>you</p>
+                        </div>
+                    </div> */}
+
+                    <div className="stext">
+                        <div className="stext__textslider--outer">
+                            <div className="stext__textslider--inner">
+                            <p>Our areas of expertise</p>
+                            <p>We'd like to work with you</p>
+                            
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -118,7 +128,7 @@ class Services extends Component{
                      data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">1</span>
                         <span class="process__title">Drain &amp; Dispose</span>
-                        <span class="process__subtitle">We first drain and dispose effluent water from both private and commercial property</span>
+                        <span class="process__subtitle">We drain and dispose effluent water from both private and commercial properties</span>
                     </li>
 
                     <li class="process__item" 
@@ -128,7 +138,7 @@ class Services extends Component{
                      data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">2</span>
                         <span class="process__title">Sewage Removal  &amp; Disposal Sites</span>
-                        <span class="process__subtitle">Here, we use the honey sucker tank to remove effluent or sewage water; and then soon after, we dispose the effluent water at the disposal site</span>
+                        <span class="process__subtitle">we use the honey sucker tank to remove effluent or sewage water; And then soon after, we dispose the effluent water at the disposal site</span>
                     </li>
 
                     <li class="process__item" 
@@ -138,7 +148,7 @@ class Services extends Component{
                      data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">3</span>
                         <span class="process__title">Client Enviromental License provision</span>
-                        <span class="process__subtitle">On this stage, we provide our clients with the enviromental license of the waste water plant</span>
+                        <span class="process__subtitle">We provide our clients with the enviromental license of the waste water plant</span>
                     </li>
 
                     <li class="process__item"  data-aos="fade-down"
@@ -147,7 +157,7 @@ class Services extends Component{
                                     data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">4</span>
                         <span class="process__title">Septic Tank Inspection Advise</span>
-                        <span class="process__subtitle">At this point, we help advise our clients on a possible future inspection period, which is ideally every 2 to 3 years. </span>
+                        <span class="process__subtitle">Advise is given to a client on possible future inspection period, which is ideally every two to three years </span>
                     </li>
                     </ul>
 
