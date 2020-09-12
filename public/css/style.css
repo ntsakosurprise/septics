@@ -8671,8 +8671,13 @@ p {
             margin-top: 10rem; } }
         .home__story--side2-i-al-head {
           margin-top: 3rem;
-          width: 60%;
-          margin-left: 30%; }
+          margin-bottom: 2rem;
+          width: 70%;
+          margin-left: 20%;
+          background-color: white;
+          text-align: center;
+          padding-top: 1rem;
+          padding-bottom: 1rem; }
           @media only screen and (max-width: 600px) {
             .home__story--side2-i-al-head {
               width: 80%;
@@ -8684,7 +8689,8 @@ p {
             margin-right: 1rem; }
           .home__story--side2-i-al-head span {
             display: inline-block;
-            font-size: 2rem; }
+            font-size: 3rem;
+            color: #663333; }
         .home__story--side2-i-al-body p {
           color: #fff;
           font-size: 1.7rem;

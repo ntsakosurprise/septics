@@ -212,6 +212,7 @@ class Contact extends Component{
                                         <p>
                                             <small><span>+</span><a href="tel:0749159974">0749159974</a></small>
                                             <small><span>+</span><a href="tel:0670245492">0670245492</a></small>
+                                            <small><span>+</span><a href="tel:0829595444">0829595444</a></small>
                                         </p>
                                     </section>
                                 <strong className="clearfix" />

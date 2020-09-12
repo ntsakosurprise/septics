@@ -30,7 +30,7 @@ class Passion extends Component{
                                     data-aos-duration="5000"
                                     data-aos-easing="ease-in-out-cubic">
 
-                            <h2 className="home__passion--content-title">Waste Management</h2> 
+                            <h2 className="home__passion--content-title">Honey Sucker Services</h2> 
                             <p className="home__passion--content-text">
                             We enjoy hygienically clean environments,and although our work expose us to an array of germs,
                             the love we have for collecting waste to mantain good hygiene is intense
