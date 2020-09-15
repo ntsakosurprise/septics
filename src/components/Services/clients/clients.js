@@ -51,10 +51,10 @@ class Clients extends  Component{
                                 <div className="services__clients--sign-txt"> 
 
                                     <p>
-                                    Odours escape on the surface of the land when the tank is full and is a sure sign that the tank is full
+                                    Odours escape on the surface of the land when the tank is full and is a sure sign that the tank is full.
 
 
-                                    </p>
+                                 </p>
 
                                 </div>
 
@@ -75,7 +75,7 @@ class Clients extends  Component{
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                Water pooling around the septic tank especially if it is not from rain water
+                                Water pooling around the septic tank especially if it is not from the rain water.
 
                                 </p>
 
@@ -98,7 +98,7 @@ class Clients extends  Component{
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                Slow draining basins, showers and toilets are a good indication your tank needs to be pumped
+                                Slow draining basins, showers, and toilets are a good indication your tank needs to be pumped.
 
                                 </p>
 
@@ -121,7 +121,7 @@ class Clients extends  Component{
                             <div className="services__clients--sign-txt"> 
 
                                 <p>
-                                A definite sign that your tank is full. At this point you cannot afford to delay on getting the septic tank pumped.
+                                A definite sign that your tank is full, At this point you cannot afford to delay on getting the septic tank pumped.
 
 
                                 </p>

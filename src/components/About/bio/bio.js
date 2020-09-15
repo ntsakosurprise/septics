@@ -53,7 +53,7 @@ class Bio extends Component{
                             <div>
 
                               <p>
-                              We are a waste management business that is currently mainly focused on the collection of effluent water from septic tanks. Situated in Midrand,our current main areas of focus are Centurion, Mnandi, and Austin. 
+                              We are a waste management business that is currently, mainly focused on the collection of effluent water from septic tanks. Situated in Midrand,our current main areas of focus are Centurion, Mnandi, Joburg, Pretoria, Kyalami,Brits,and Glen Austin. 
                              
 
 
@@ -61,7 +61,7 @@ class Bio extends Component{
 
                               <p>
                              
-                              Our business uses equipments that are suitable for an effective pump-out of waste water from areas of concern such as septic tanks. With clients being the core of our business, client satisfaction is the foundation of our great service,and we are always open to help our clients where our assistance is needed.
+                              Our business uses equipments that are suitable for effective pump-out of waste water from the areas of concern such as septic tanks. With clients being the core of our business, client satisfaction is the foundation upon which our great service has been built.  We are always open to help our clients where our assistance is needed.
 
 
                               </p>

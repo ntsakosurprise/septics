@@ -18,156 +18,154 @@ class ServiceForm extends  Component{
             form : {
                     
                     
-                    username:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
-                                isRequiredFormat:{
-                                    minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
-                                },
-                                isPlaceholder: true
+                username:{
                     
-                        },
-                        isValid: false,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'right'
-                        },
-                        config: {
-                            
-                            name: "username",
-                            type: 'text',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    phone:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
-                                isRequiredFormat:{
-                                    minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
-                                },
-                                isPlaceholder: true
-                    
-                        },
-                        isValid: false,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'right'
-                        },
-                        config: {
-                            
-                            name: "phone",
-                            type: 'text',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    email:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
+                    control: 'input',
+                    value:'',
+                    validation: {
                             isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
+                                minLetters: 2,
+    
+                                maxPieces: 3,
+                                specialCharacters: true
                             },
-                    
-                        },
-                        isValid: true,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'bottom'
-                        },
-                        config: {
-                            
-                            name: "password",
-                            type: 'password',
-                            placeholder: '....',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    area:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
-                                isRequiredFormat:{
-                                    minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
-                                },
-                                isPlaceholder: true
-                    
-                        },
-                        isValid: false,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'right'
-                        },
-                        config: {
-                            
-                            name: "area",
-                            type: 'text',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    message:{
-                        
-                        control: 'textarea',
-                        value:'',
-                        validation: {
-                            isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
-                            },
-                    
-                        },
-                        isValid: true,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'bottom'
-                        },
-                        config: {
-                            
-                           
-                            placeholder: '....',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                  
-
-                  
+                            isPlaceholder: true
                 
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "username",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                phone:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                            isRequiredFormat:{
+                                
+                                isRequired: true,
+                                isNumber: true,
+                                isLen: 10
+                            },
+                            isPlaceholder: true
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "phone",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                email:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                        isRequiredFormat:{
+                            isRequired: true,
+                            isEmail: true
+                            
+                        },
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'bottom'
+                    },
+                    config: {
+                        
+                        name: "email",
+                        type: 'text',
+                        placeholder: '....',
+                        // disabled: false
+                        
+                    }
+                    
+                },
+                area:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                            isRequiredFormat:{
+                                minLetters: 2,
+                                isRequired: true,
+                               
+                            },
+                            isPlaceholder: true
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "area",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                message:{
+                    
+                    control: 'textarea',
+                    value:'',
+                    validation: {
+                        isRequiredFormat:{
+                            isRequired: true,
+                            minLetters: 2,
+                            minPieces: 5
+                            
+                        },
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'bottom'
+                    },
+                    config: {
+                        
+                        name: 'message',
+                        placeholder: '....',
+                        disabled: false
+                        
+                    }
+                    
+                },
+              
+
+              
+            
             },
-            changePassword: false
+            
         };
     }
 
@@ -228,146 +226,113 @@ class ServiceForm extends  Component{
 
     controlValidate = (validateControl)=>{
         
-            let validData = [true,''] 
+        let validData = [true,''] 
+    
+        if(validateControl.validation.isRequired){ 
         
-            if(validateControl.validation.isRequired){ 
-            
-                let valid = validateControl.value.trim() !== ''
-                let message = ''
-                if(!valid){
-                    message = `${validateControl.config.name} is a required field `
-                }
-        
-                validData = !valid ? [valid,message] : validData 
-                return validData
-                
+            let valid = validateControl.value.trim() !== ''
+            let message = ''
+            if(!valid){
+                message = `${validateControl.config.name} is a required field `
             }
-            if(validateControl.validation.isRequiredFormat){
-                
-                let value =  validateControl.value.trim() 
-                let specialCharactersRegex = '[`!@#$%^&*()_+\-=\[\]]{};:"\\|,.<>\/?~]'
-                let charsArray = Array.from(specialCharactersRegex)
-                    charsArray.push("'")
-                let containsSpecialCars = charsArray.some((v)=>value.indexOf(v) > 0)
-                let pieces = value.split(/\W+/)
-                console.log('SPECIAL CHARACTER TEST')
-                console.log(charsArray)
-                console.log(containsSpecialCars)
-                console.log(value)
-                console.log(specialCharactersRegex)
-                let isRequiredFormat =  validateControl.validation.isRequiredFormat 
-                if(isRequiredFormat.specialCharacters && containsSpecialCars === true ) return [false,`special characters are not allowed as username`]
-                if(value.length < isRequiredFormat.minLetters ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
-                if(pieces.length < isRequiredFormat.minPieces ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
-                if(pieces.length > isRequiredFormat.maxPieces ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`]
-            
-                    
-            
-            }
-            
+    
+            validData = !valid ? [valid,message] : validData 
             return validData
+            
+        }
+        if(validateControl.validation.isRequiredFormat){
+            
+            let value =  validateControl.value.trim() 
+            let specialCharactersRegex = '[`!@#$%^&*()_+\-=\[\]]{};:"\\|,.<>\/?~]'
+            let charsArray = Array.from(specialCharactersRegex)
+                charsArray.push("'")
+            let containsSpecialCars = charsArray.some((v)=>value.indexOf(v) > 0)
+            let pieces = value.split(/\W+/) 
+            let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            console.log('SPECIAL CHARACTER TEST')
+            console.log(charsArray)
+            console.log(containsSpecialCars)
+            console.log(value)
+            console.log(specialCharactersRegex)
+            let isRequiredFormat =  validateControl.validation.isRequiredFormat 
+            if(isRequiredFormat.specialCharacters && containsSpecialCars === true ) return [false,`special characters are not allowed as username`]
+            if(isRequiredFormat.minLetters && (value.length < isRequiredFormat.minLetters) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
+            if(isRequiredFormat.minPieces && (pieces.length < isRequiredFormat.minPieces) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
+            if(isRequiredFormat.maxPieces && (pieces.length > isRequiredFormat.maxPieces) ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`] 
+            if(isRequiredFormat.isNumber && isNaN(value) ) return [false,`${validateControl.config.name} should be a number with no spaces`] 
+            if(isRequiredFormat.isLen && (value.length !== isRequiredFormat.isLen) ) return [false,`${validateControl.config.name} should be a total of ${isRequiredFormat.isLen} numbers`] 
+            if(isRequiredFormat.isEmail && emailRegex.test(value) !== true) return [false,`${validateControl.config.name} Should be a valid email`]
         
+                
+        
+        }
+        
+        return validData
+    
     }
-
-    showPasswordBox(e){
-
-        e.preventDefault()
-        const changePassword = !this.state.changePassword
-        this.setState({...this.state,changePassword:changePassword })
-    }
+   
 
     submitForm = (e)=>{
                 
-            e.preventDefault() 
+        e.preventDefault() 
+
+        
+        
+        const {actions} = this.props
+        const {sendContactData} = actions 
+        let submittData = {} 
+        let formIsValid = true 
+        let {form} = this.state 
+        let {notify} = this
+        
+        
+        
+        for(let k in form){
             
-            const {actions} = this.props
-            const {sendUserProfileUpdate,unsetIsProfile} = actions 
-            let submittData = {} 
-            let formIsValid = true 
-            let {form} = this.state 
-            let {notify} = this
-            
-            
-            
-            for(let k in form){
+            console.log('THE SUBMIT CONTROL')
+            console.log(form[k])
+            if(form[k].validation && form[k].validation.isRequiredFormat){
+
                 
-                console.log('THE SUBMIT CONTROL')
-                console.log(form[k])
-                if(form[k].validation && form[k].validation.isRequired){
 
-                    if(form[k].isValid === false){
+                if(form[k].isValid === false){
 
+            
+                    formIsValid = false 
+
+                    notify({message:'Filled form data must be valid',type: 'warn',className: 'notify-warn'})
+                    break
+
+
+                }else{
+ 
+                    submittData[k] = form[k].value
                 
-                        formIsValid = false 
-    
-                        notify({message:'Filled form data must be valid',type: 'warn',className: 'notify-warn'})
-                        break
-    
-    
-                    }else{
-    
-                        if(k !== 'password' || form[k].value.trim() !== '' ){
-    
-                           
-                            submittData[k] = form[k].value
-                        }
-                        
-                    }
-
-                }else if(form[k].value.trim() !== ''){
-
-                    if(form[k].isValid === false){
-                        formIsValid = false 
-                        break
-                    }else{
-
-                        submittData[k] = form[k].value
-
-                    }
-                  
                 }
-              
-            
-            } 
 
-            if(!formIsValid) return
+            }else{
 
+                if(form[k].value.trim() !== ''){
 
-            if(submittData.username){
+                    submittData[k] = form[k].value
 
-                console.log('THE name')
-                console.log(submittData.username)
-                let names = submittData.username.split(' ') 
-                console.log(names)
-
-                submittData.fullName = {firstName: names[0],lastName: names[1]} 
-                delete submittData.username 
-                console.log('THE FORM DATA TO BE SUMBITTED')
-                console.log(submittData)
-              
-                 
-            }
-
-            if(submittData.newpassword){
-
-                submittData['password'] = submittData.newpassword 
-                delete submittData.newpassword
+                }
+               
 
             }
+          
+        
+        } 
 
-            
-            
-            
-            console.log(submittData)
-           
-            // console.log('THE SIGN UP DATA')
-            // console.log(submittData)
-            
-            // submittData.strategy = 'anzii'
-            sendUserProfileUpdate(submittData,1,'infoUpdate') 
-            // unsetIsProfile()
-            
-            
+        if(!formIsValid) return
+
+
+    
+        console.log(submittData)
+        sendContactData(submittData)  
+        
+        
+        
 
     }
 
@@ -402,11 +367,8 @@ class ServiceForm extends  Component{
 
     render(){
 
-            const {changePassword} = this.state 
-            const {firstName,lastName,isFetching,isProgressBar} = this.props 
-            let name = firstName ? `${firstName} ${lastName}` : ''
-            console.log('PROPS IN INFOUPDATE')
-            console.log(this.props)
+            // const {changePassword} = this.state 
+          
           
             
        
@@ -425,10 +387,10 @@ class ServiceForm extends  Component{
                                 <FormControl 
                             
                                     styles={{child:'service__modal--form-input',error: ''}}
-                                    id = 'email'
+                                    id = 'username'
                                     controlData={this.state.form.username}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                    
                                 
                                 />
 
@@ -446,7 +408,7 @@ class ServiceForm extends  Component{
                                     id = 'phone'
                                     controlData={this.state.form.phone}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                   
                                 
                                 />
 
@@ -461,10 +423,10 @@ class ServiceForm extends  Component{
                                 <FormControl 
                             
                                     styles={{child:'service__modal--form-input',error: ''}}
-                                    id = 'username'
+                                    id = 'email'
                                     controlData={this.state.form.email}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                    
                                 
                                 />
 
@@ -482,7 +444,7 @@ class ServiceForm extends  Component{
                                     id = 'area'
                                     controlData={this.state.form.area}
                                     change={(control)=>this.updator(control)}
-                                    placeHolder={name}
+                                   
                                 
                                 />
 
@@ -501,7 +463,7 @@ class ServiceForm extends  Component{
                                 id = 'message'
                                 controlData={this.state.form.message}
                                 change={(control)=>this.updator(control)}
-                                placeHolder={name}
+                               
 
                             />
 
@@ -528,9 +490,9 @@ class ServiceForm extends  Component{
 
                             {
                                 
-                                isProgressBar === true && isFetching === true
-                                    ?  <ProgressBarLinear />
-                                    : null
+                                // isProgressBar === true && isFetching === true
+                                //     ?  <ProgressBarLinear />
+                                //     : null
                             }
         
                         

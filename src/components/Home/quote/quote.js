@@ -17,7 +17,7 @@ class Quote extends Component{
 
                     <div className="home__quote--form">
 
-                        <h2 className="home__quote--title">Join a list of clients that vouch for our services</h2> 
+                        <h2 className="home__quote--title">Join a list of clients that love our services</h2> 
                         <QuoteForm />
 
 

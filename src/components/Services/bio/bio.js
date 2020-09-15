@@ -48,7 +48,9 @@ class Bio extends Component{
                             <div>
 
                               <p>
-                              Our core service revolves around septic tanks cleaning and inspections,furthermore, we also have the team that focuses on other areas of Septic tank service.
+                              
+                              Realising the greater need of septic tanks, SouthSeptic saw a companion need to mantain septic tanks and to provide solutions to problems that may result from their use.
+                              Our main focus is septic tanks pumping.
 
 
                               </p>

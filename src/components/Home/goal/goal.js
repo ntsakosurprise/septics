@@ -86,9 +86,30 @@ class Goal extends Component{
 		});
 	}
     
+    componentDidUpdate(){
+
+        const {state} = this 
+        const {isModalOpen} = state
+        
+        if(isModalOpen){
+    
+          document.body.style.overflow = 'hidden'
+        //   document.body.style.pointerEvents ='none'
+        //   document.body.style.opacity = '0.4'
+    
+        }else{
+    
+          document.body.style.overflow = 'visible'
+        //   document.body.style.pointerEvents ='all'
+        //   document.body.style.opacity = '1'
+        }
+       
+      }
     
     render(){
 
+
+        const {actions,home} = this.props
         return(
 
             <div className="home__goal">
@@ -171,7 +192,7 @@ class Goal extends Component{
 				>
 
 
-					<ServiceForm />
+					<ServiceForm actions={actions} home={home} />
 
 					<button
 						style={{

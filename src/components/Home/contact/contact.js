@@ -83,7 +83,7 @@ class Contact extends Component{
 
                         <section>
                             <p className="home__contact--locations-adtext">
-                             As we grow our good reputation,we'd like to involve you,and we are simply a call away.
+                             As we grow our good reputation,we'd like to involve you; and we are simply a call away.
                             </p>
                         </section>
 
@@ -135,7 +135,7 @@ class Contact extends Component{
                                         <small>1.</small><span>Septic Tank Pumping Need</span>
                                     </section>
                                     <section className="home__story--side2-i-body">
-                                        <p>Septic tank pumping has become essential especially in rural and under developed and developed areas that are not connected to a sewage system.
+                                        <p>Septic tank pumping has become essential, especially in both rural and under developed&developed areas that are not connected to a sewage system.
                                         </p>
                                     </section>
                                 </div>
@@ -145,7 +145,7 @@ class Contact extends Component{
                                         <small>2.</small><span>Human Waste Disposal</span>
                                     </section>
                                     <section className="home__story--side2-i-body">
-                                        <p>Homes and buildings not connected to a municipal or city sewage system requires a method to get rid of human waste (feces and urine)
+                                        <p>Homes and buildings not connected to a municipal or city sewage system require a method to get rid of human waste (feces and urine).
                                         </p>
                                     </section>
                                 </div>
@@ -155,7 +155,7 @@ class Contact extends Component{
                                         <span>What is a septic tank?</span>
                                     </section>
                                     <section className="home__story--side2-i-al-body">
-                                        <p>A septic tank is a small sewage treatment made of brick work, fiberglass, concrete, plastic or pvc to collect waste from domestic household and commercial property.
+                                        <p>A septic tank is a small sewage treatment made of brick work, fiberglass, concrete, and plastic or pvc to collect waste from domestic households and commercial properties.
                                         </p>
                                     </section>
                                 </div>

@@ -50,13 +50,13 @@ class Clients extends  Component{
 
                                     <p>
                                     SouthSeptic has made it its mandatory business trait to provide  reliable services to its clients all the time. 
-                                    The goal for reliability is  embedded all over our operations at all times. 
+                                    Our goal is to remain reliable to our clients all the time. 
 
                                     </p>
 
                                     <p>
                                     To ensure that your needs as our client are met on every level, we use equipment such as trucks that are equipped with the necessary
-                                     tools that help us in achieving a smooth and flawless workflow.
+                                     tools that help us render greater services.
                                     </p>
 
                                     <p>

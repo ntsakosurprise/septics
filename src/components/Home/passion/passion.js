@@ -32,15 +32,15 @@ class Passion extends Component{
 
                             <h2 className="home__passion--content-title">Honey Sucker Services</h2> 
                             <p className="home__passion--content-text">
-                            We enjoy hygienically clean environments,and although our work expose us to an array of germs,
-                            the love we have for collecting waste to mantain good hygiene is intense
+                            We enjoy hygienically clean environments. Although our work exposes us to an array of germs,
+                            the love we have for collecting waste to mantain good hygiene is intense.
 
                             </p>
 
                             <p className="home__passion--content-text">
                            
-                            We have a lot fun while we do our work,in addition, 
-                            SouthSeptic uses equipment that protects Its employees against possible risks while rendering services. 
+                            We have a lot fun while we do our work; and at the same time,
+                            SouthSeptic uses equipment that protects Its employees against possible risks associated with our line of work. 
                             </p>
 
 
@@ -55,7 +55,7 @@ class Passion extends Component{
 
                             <p className="home__passion--content-text">
                             
-                            we love septic tank pumping to protect you against an array of things including bacteria that may occur if the septic tank is not pumped.
+                            we love septic tank pumping to protect you against an array of things including bacteria that may occur if your septic tank is not pumped.
 
 
                             </p>

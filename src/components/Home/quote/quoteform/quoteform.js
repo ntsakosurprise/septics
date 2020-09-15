@@ -18,99 +18,153 @@ class QuoteForm extends  Component{
             form : {
                     
                     
-                    username:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
-                                isRequiredFormat:{
-                                    minLetters: 2,
-                                    minPieces: 2,
-                                    maxPieces: 3,
-                                    specialCharacters: true
-                                },
-                                isPlaceholder: true
+                username:{
                     
-                        },
-                        isValid: false,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'right'
-                        },
-                        config: {
-                            
-                            name: "username",
-                            type: 'text',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    email:{
-                        
-                        control: 'input',
-                        value:'',
-                        validation: {
+                    control: 'input',
+                    value:'',
+                    validation: {
                             isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
+                                minLetters: 2,
+    
+                                maxPieces: 3,
+                                specialCharacters: true
                             },
-                    
-                        },
-                        isValid: true,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'bottom'
-                        },
-                        config: {
-                            
-                            name: "password",
-                            type: 'password',
-                            placeholder: '....',
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                    message:{
-                        
-                        control: 'textarea',
-                        value:'',
-                        validation: {
-                            isRequiredFormat:{
-                                minLetters: 8
-                                // isMatch: {
-                                //     matchID: 'newpassword'
-                                // }
-                            },
-                    
-                        },
-                        isValid: true,
-                        isTouched: false,
-                        validationMessage: '',
-                        validationStyles: {
-                            position: 'bottom'
-                        },
-                        config: {
-                            
-                           
-                            placeholder: '....',
-
-                            disabled: false
-                            
-                        }
-                        
-                    },
-                  
-
-                  
+                            isPlaceholder: true
                 
-            },
-            changePassword: false
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "username",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                phone:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                            isRequiredFormat:{
+                                
+                                isRequired: true,
+                                isNumber: true,
+                                isLen: 10
+                            },
+                            isPlaceholder: true
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "phone",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                email:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                        isRequiredFormat:{
+                            isRequired: true,
+                            isEmail: true
+                            
+                        },
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'bottom'
+                    },
+                    config: {
+                        
+                        name: "email",
+                        type: 'text',
+                        placeholder: '....',
+                        // disabled: false
+                        
+                    }
+                    
+                },
+                area:{
+                    
+                    control: 'input',
+                    value:'',
+                    validation: {
+                            isRequiredFormat:{
+                                minLetters: 2,
+                                isRequired: true,
+                               
+                            },
+                            isPlaceholder: true
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'right'
+                    },
+                    config: {
+                        
+                        name: "area",
+                        type: 'text',
+                        disabled: false
+                        
+                    }
+                    
+                },
+                message:{
+                    
+                    control: 'textarea',
+                    value:'',
+                    validation: {
+                        isRequiredFormat:{
+                            isRequired: true,
+                            minLetters: 2,
+                            minPieces: 5
+                            
+                        },
+                
+                    },
+                    isValid: false,
+                    isTouched: false,
+                    validationMessage: '',
+                    validationStyles: {
+                        position: 'bottom'
+                    },
+                    config: {
+                        
+                        name: 'message',
+                        placeholder: '....',
+                        disabled: false
+                        
+                    }
+                    
+                },
+              
+
+              
+            
+        },
         };
     }
 
@@ -171,55 +225,52 @@ class QuoteForm extends  Component{
 
     controlValidate = (validateControl)=>{
         
-            let validData = [true,''] 
+        let validData = [true,''] 
+    
+        if(validateControl.validation.isRequired){ 
         
-            if(validateControl.validation.isRequired){ 
-            
-                let valid = validateControl.value.trim() !== ''
-                let message = ''
-                if(!valid){
-                    message = `${validateControl.config.name} is a required field `
-                }
-        
-                validData = !valid ? [valid,message] : validData 
-                return validData
-                
+            let valid = validateControl.value.trim() !== ''
+            let message = ''
+            if(!valid){
+                message = `${validateControl.config.name} is a required field `
             }
-            if(validateControl.validation.isRequiredFormat){
-                
-                let value =  validateControl.value.trim() 
-                let specialCharactersRegex = '[`!@#$%^&*()_+\-=\[\]]{};:"\\|,.<>\/?~]'
-                let charsArray = Array.from(specialCharactersRegex)
-                    charsArray.push("'")
-                let containsSpecialCars = charsArray.some((v)=>value.indexOf(v) > 0)
-                let pieces = value.split(/\W+/)
-                console.log('SPECIAL CHARACTER TEST')
-                console.log(charsArray)
-                console.log(containsSpecialCars)
-                console.log(value)
-                console.log(specialCharactersRegex)
-                let isRequiredFormat =  validateControl.validation.isRequiredFormat 
-                if(isRequiredFormat.specialCharacters && containsSpecialCars === true ) return [false,`special characters are not allowed as username`]
-                if(value.length < isRequiredFormat.minLetters ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
-                if(pieces.length < isRequiredFormat.minPieces ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
-                if(pieces.length > isRequiredFormat.maxPieces ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`]
-            
-                    
-            
-            }
-            
+    
+            validData = !valid ? [valid,message] : validData 
             return validData
+            
+        }
+        if(validateControl.validation.isRequiredFormat){
+            
+            let value =  validateControl.value.trim() 
+            let specialCharactersRegex = '[`!@#$%^&*()_+\-=\[\]]{};:"\\|,.<>\/?~]'
+            let charsArray = Array.from(specialCharactersRegex)
+                charsArray.push("'")
+            let containsSpecialCars = charsArray.some((v)=>value.indexOf(v) > 0)
+            let pieces = value.split(/\W+/) 
+            let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            console.log('SPECIAL CHARACTER TEST')
+            console.log(charsArray)
+            console.log(containsSpecialCars)
+            console.log(value)
+            console.log(specialCharactersRegex)
+            let isRequiredFormat =  validateControl.validation.isRequiredFormat 
+            if(isRequiredFormat.specialCharacters && containsSpecialCars === true ) return [false,`special characters are not allowed as username`]
+            if(isRequiredFormat.minLetters && (value.length < isRequiredFormat.minLetters) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minLetters} letters long`]
+            if(isRequiredFormat.minPieces && (pieces.length < isRequiredFormat.minPieces) ) return [false,`${validateControl.config.name} should be atleast ${isRequiredFormat.minPieces} words`] 
+            if(isRequiredFormat.maxPieces && (pieces.length > isRequiredFormat.maxPieces) ) return [false,`${validateControl.config.name} should be atmost ${isRequiredFormat.maxPieces} words`] 
+            if(isRequiredFormat.isNumber && isNaN(value) ) return [false,`${validateControl.config.name} should be a number with no spaces`] 
+            if(isRequiredFormat.isLen && (value.length !== isRequiredFormat.isLen) ) return [false,`${validateControl.config.name} should be a total of ${isRequiredFormat.isLen} numbers`] 
+            if(isRequiredFormat.isEmail && emailRegex.test(value) !== true) return [false,`${validateControl.config.name} Should be a valid email`]
         
-    }
-
-    showPasswordBox(e){
-
-        e.preventDefault() 
+                
         
-        const changePassword = !this.state.changePassword
-        this.setState({...this.state,changePassword:changePassword })
-    }
+        }
+        
+        return validData
+    
+}
 
+   
     submitForm = (e)=>{
                 
             e.preventDefault() 
@@ -371,7 +422,7 @@ class QuoteForm extends  Component{
                             <FormControl 
                         
                                 styles={{child:'home__quote--form-input',error: ''}}
-                                id = 'email'
+                                id = 'username'
                                 controlData={this.state.form.username}
                                 change={(control)=>this.updator(control)}
                                
@@ -390,7 +441,7 @@ class QuoteForm extends  Component{
                             <FormControl 
                         
                                 styles={{child:'home__quote--form-input',error: ''}}
-                                id = 'username'
+                                id = ''
                                 controlData={this.state.form.email}
                                 change={(control)=>this.updator(control)}
                                

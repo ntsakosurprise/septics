@@ -47,7 +47,7 @@ class Pledge extends Component{
                                     data-aos-delay="500"
                                     data-aos-duration="5000"
                                     data-aos-easing="ease-in-out-cubic">
-                                Our clients form an imperative part of our business and associated services,
+                                Our clients form an imperative part of our business and associated services;
                                 as a result,we promise to be always open to their needs and suggestions.
                                 We constantly work hard to ensure the satisfaction of our clients.
 

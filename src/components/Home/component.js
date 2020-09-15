@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
 import * as actions from './actions'
-
+import * as navigatorActions from '../ReduxFirstNavigator/actions' 
 import Search from './search/search'
 import Identity from './identity/identity' 
 import Septic from './septic/septic' 
@@ -32,15 +32,34 @@ class Home extends Component{
         super(props)
     }
 
-    componentWillMount(){
+   
 
-        console.log('THE HEADER COMPONENT IS GOING TO MOUNT')
-    }
+    componentDidUpdate(){
+
+        const {home} = this.props
+        const {isFetching,isProgressBar} = home
+    
+        if(isProgressBar === true && isFetching === true){
+    
+          document.body.style.overflow = 'hidden'
+          document.body.style.pointerEvents ='none'
+          document.body.style.opacity = '0.4'
+    
+        }else{
+    
+          document.body.style.overflow = 'visible'
+          document.body.style.pointerEvents ='all'
+          document.body.style.opacity = '1'
+        }
+       
+      }
 
 
     render(){
-        console.log('THE LOCATION STATE SHAPE')
-        console.log(this.props.state.pathname)
+
+        
+        const {actions,home} = this.props 
+        const {isFetching,isProgressBar} = home
 
         return(
 
@@ -64,7 +83,7 @@ class Home extends Component{
 
                     <div>
 
-                        <Goal />
+                        <Goal actions={actions} home={home} />
                     </div>
 
                     <div>
@@ -99,10 +118,10 @@ class Home extends Component{
 
 const mapStateToProps = (state)=>{
 
+    const {home} = state
+
     return{
-        state:{
-            ...state.router
-        }
+        home
     }
 }
 
@@ -110,7 +129,7 @@ const mapDispachToProps = (dispatch)=>{
 
     return {
 
-        actions: bindActionCreators({...actions},dispatch)
+        actions: bindActionCreators({...actions,...navigatorActions},dispatch)
     }
 }
 
