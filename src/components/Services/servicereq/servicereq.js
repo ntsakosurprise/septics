@@ -39,7 +39,7 @@ class ServiceReq extends  Component{
                                            
                                             <h3 className="services__area-title">Our most active areas of operation</h3>
                                             <div class="content-slantedcard-text">
-                                                <p>Although not limited to other areas, SouthSeptic's business currently revolves around areas surrounding Midrand. Our aim is to be able to serve all areas around Gauteng in due time. 
+                                                <p>Although not limited to other areas, South Septic's business currently revolves around areas surrounding Midrand. Our aim is to be able to serve all areas around Gauteng in due time.  
                                                     We want to be the best provider of Septic tank pumping services in Gauteng.</p>
                                             </div>
                                             <section className="slide__buttonContainer services__area">

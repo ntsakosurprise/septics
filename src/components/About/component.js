@@ -23,14 +23,31 @@ class About extends Component{
         super(props)
     }
 
-    componentWillMount(){
+    componentDidUpdate(){
 
-        console.log('THE ABOUT COMPONENT IS GOING TO MOUNT')
-        console.log(this.constructor.name)
-    }
+        const { about} = this.props
+        const {isFetching,isProgressBar} =  about
+    
+        if(isProgressBar === true && isFetching === true){
+    
+          document.body.style.overflow = 'hidden'
+          document.body.style.pointerEvents ='none'
+          document.body.style.opacity = '0.4'
+    
+        }else{
+    
+          document.body.style.overflow = 'visible'
+          document.body.style.pointerEvents ='all'
+          document.body.style.opacity = '1'
+        }
+       
+      }
 
 
     render(){
+
+        const {actions, about} = this.props 
+        const {isFetching,isProgressBar} =  about
 
         return(
 
@@ -40,7 +57,7 @@ class About extends Component{
                 <Im />
                 <strong className="clearfix" /> 
                 <Clients />
-                <ServiceReq />
+                <ServiceReq actions={actions} about={about}  />
                
              </article>
         )
@@ -53,10 +70,10 @@ class About extends Component{
 
 const mapStateToProps = (state)=>{
 
+    const {about} = state
+
     return{
-        state:{
-            ...state.history
-        }
+        about
     }
 }
 

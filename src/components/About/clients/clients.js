@@ -49,7 +49,7 @@ class Clients extends  Component{
                                 <div>
 
                                     <p>
-                                    SouthSeptic has made it its mandatory business trait to provide  reliable services to its clients all the time. 
+                                    South Septic has made it its mandatory business trait to provide  reliable services to its clients all the time. 
                                     Our goal is to remain reliable to our clients all the time. 
 
                                     </p>
@@ -60,7 +60,7 @@ class Clients extends  Component{
                                     </p>
 
                                     <p>
-                                    The input of our clients is of higher value to us,and we are always open to their commands should there be any; 
+                                    The input of our clients is of higher value to us, and we are always open to their commands should there be any;  
                                     this helps us ensure that we leave our clients happy and satisfied.
                                     </p>
 

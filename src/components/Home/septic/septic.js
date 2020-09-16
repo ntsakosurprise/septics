@@ -227,8 +227,8 @@ class Septic extends Component{
                     <section className="home__septic--standout-text">
                         <p>
                        
-                        Southseptic PTY Limited is a sewage removal company that focuses on emptying septic tanks 
-                        using a truck fitted with a vuccum stystem to effectively pump out sewage waste.
+                        South Septic PTY Limited is a sewage removal company that focuses on emptying septic tanks 
+                        using a truck fitted with a vacuum system to effectively pump out sewage waste.
                         <span className="home__septic--standout-text-bar1"></span>
                         <span className="home__septic--standout-text-bar2"></span>
  

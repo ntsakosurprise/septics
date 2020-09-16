@@ -6,9 +6,31 @@ import QuoteForm from './quoteform/quoteform'
 
 class Quote extends Component{
     
+    constructor(props){
+
+        super(props)
+
+    }
+
+    componentWillUpdate(){
+
+        const {actions,home} = this.props 
+        const {currentSender} = home 
+
+        if(currentSender.trim() !== ''){
+
+            if(currentSender.trim() === 'modalForm') return false
+        }
+
+    }
+
     
+
+
     render(){
 
+        const {actions,home} = this.props 
+      
         return(
 
             <div className="home__quote">
@@ -18,7 +40,7 @@ class Quote extends Component{
                     <div className="home__quote--form">
 
                         <h2 className="home__quote--title">Join a list of clients that love our services</h2> 
-                        <QuoteForm />
+                        <QuoteForm actions={actions} home={home} />
 
 
 

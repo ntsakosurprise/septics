@@ -147,7 +147,7 @@ class Goal extends Component{
                                     data-aos-delay="500"
                                     data-aos-duration="50000"
                                     data-aos-easing="ease-in-out-cubic">
-                            Our goal with SouthSeptic Services is to be the premier provider of septic
+                            Our goal with South Septic Services is to be the premier provider of septic
                              tank services in and around surrounding areas of Gauteng.
                              To speedily attend to your calls to protect your comfort, enviroment, and health.
 

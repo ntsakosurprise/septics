@@ -49,7 +49,7 @@ class Bio extends Component{
 
                               <p>
                               
-                              Realising the greater need of septic tanks, SouthSeptic saw a companion need to mantain septic tanks and to provide solutions to problems that may result from their use.
+                              Realising the greater need of septic tanks, South Septic saw a companion need to mantain septic tanks and to provide solutions to problems that may result from their use.
                               Our main focus is septic tanks pumping.
 
 

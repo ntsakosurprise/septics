@@ -28,7 +28,7 @@ class Contact extends Component{
 
                     <div className="home__contact--connect">
 
-                        <h4 className="home__contact--title">SouthSeptic</h4>
+                        <h4 className="home__contact--title">South Septic</h4>
 
 
                         <section className="home__contact--i">
@@ -58,12 +58,12 @@ class Contact extends Component{
                             </div>
                             <div className="home__contact--i-content">
                                 <section className="home__contact--i-cont-i">
-                                    <span>info@southseptic.co.za</span>
+                                    <span>info@South Septic.co.za</span>
                                     <small>Information</small>
                                 </section>
 
                                 <section className="home__contact--i-cont-i">
-                                    <span>accounts@southseptic.co.za</span>
+                                    <span>accounts@South Septic.co.za</span>
                                     <small>Accounts</small>
                                 </section>
                                
@@ -83,7 +83,7 @@ class Contact extends Component{
 
                         <section>
                             <p className="home__contact--locations-adtext">
-                             As we grow our good reputation,we'd like to involve you; and we are simply a call away.
+                             As we grow our good reputation, we would like to involve you; and we are simply a call away.
                             </p>
                         </section>
 
@@ -123,7 +123,7 @@ class Contact extends Component{
 
                             <section className="home__story--side1-cir">
                                 <span>How We Came To bE</span>
-                                <small>Why we've started SouthSeptic</small>
+                                <small>Why we've started South Septic</small>
                             </section>
                         </div>
 

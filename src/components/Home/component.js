@@ -101,7 +101,7 @@ class Home extends Component{
                     </div>
 
                     <div>
-                       <Quote />
+                       <Quote actions={actions} home={home} />
                    </div>
                     
 

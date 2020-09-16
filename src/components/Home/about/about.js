@@ -44,7 +44,7 @@ class About extends Component{
 
                     <div class="defilee__div defilee__div--special4">
                         <img src="/img/about_5.jpg" alt="Avatar for user 5" />
-                        <p>We are most active in Centurion, Glen Austin, Mnandi, Kyalami, Pretoria, Brits, Joburg, and Hartbeesport.</p>
+                        <p>We are most active in Centurion, Glen Austin, Mnandi, Kyalami, Pretoria, Brits, Johannesburg, and Hartbeesport.</p>
                     </div>
 
                     <div class="defilee__div defilee__div--special1 ">

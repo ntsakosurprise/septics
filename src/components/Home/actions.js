@@ -21,6 +21,23 @@ export const sendContactData = (data)=> {
   
 }
 
+export const setCurrentSender = (current)=>{
+
+  return {
+
+    type: types.SET_CURRENT_SENDER,
+    payload: current
+  }
+}
+
+export const unsetCurrentSender = (current)=>{
+
+  return {
+
+    type: types.UNSET_CURRENT_SENDER,
+    payload: ''
+  }
+}
 
 
 export const removeNotification = ()=>{
@@ -31,4 +48,6 @@ export const removeNotification = ()=>{
       payload: false
     }
   }
+
+
   

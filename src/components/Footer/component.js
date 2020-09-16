@@ -22,13 +22,32 @@ class Footer extends Component{
         super(props)
     }
 
-    componentWillMount(){
+    componentDidUpdate(){
 
-        console.log('THE HEADER COMPONENT IS GOING TO MOUNT')
-    }
+        const {footer} = this.props
+        const {isFetching,isProgressBar} = footer
+    
+        if(isProgressBar === true && isFetching === true){
+    
+          document.body.style.overflow = 'hidden'
+          document.body.style.pointerEvents ='none'
+          document.body.style.opacity = '0.4'
+    
+        }else{
+    
+          document.body.style.overflow = 'visible'
+          document.body.style.pointerEvents ='all'
+          document.body.style.opacity = '1'
+        }
+       
+      }
+
 
 
     render(){
+
+        const {actions,footer} = this.props 
+        const {isFetching,isProgressBar} = footer
 
         return(
 
@@ -37,7 +56,7 @@ class Footer extends Component{
               
                 
                 <section>
-                    <Brand />
+                    <Brand actions={actions} footer={footer} />
                 </section>
                    
                
@@ -54,10 +73,10 @@ class Footer extends Component{
 
 const mapStateToProps = (state)=>{
 
+    const {footer} = state
+
     return{
-        state:{
-            ...state.history
-        }
+        footer
     }
 }
 

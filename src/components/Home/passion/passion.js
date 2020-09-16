@@ -33,14 +33,14 @@ class Passion extends Component{
                             <h2 className="home__passion--content-title">Honey Sucker Services</h2> 
                             <p className="home__passion--content-text">
                             We enjoy hygienically clean environments. Although our work exposes us to an array of germs,
-                            the love we have for collecting waste to mantain good hygiene is intense.
+                            the love we have for collecting waste to maintain good hygiene is intense.
 
                             </p>
 
                             <p className="home__passion--content-text">
                            
                             We have a lot fun while we do our work; and at the same time,
-                            SouthSeptic uses equipment that protects Its employees against possible risks associated with our line of work. 
+                            South Septic uses equipment that protects Its employees against possible risks associated with our line of work. 
                             </p>
 
 

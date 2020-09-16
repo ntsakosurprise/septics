@@ -9731,6 +9731,13 @@ div:nth-child(3n + 1) > img {
     right: 10%;
     bottom: -3.5vh;
     cursor: pointer; }
+  .service__modal--close-btn {
+    width: auto;
+    margin-top: 10;
+    width: 15rem;
+    margin-top: 30px;
+    margin-left: -2px;
+    cursor: pointer; }
 
 .welcome-text {
   margin-left: 30%;

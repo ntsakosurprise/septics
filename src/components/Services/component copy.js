@@ -35,7 +35,7 @@ class Services extends Component{
 
 
         const {actions, services} = this.props 
-        const {isFetching,isProgressBar} =  services
+        const {isFetching,isProgressBar} =  about
 
 
         return(
@@ -48,11 +48,12 @@ class Services extends Component{
                     
                 </h2>
 
-                <Im actions={actions} services={services} />
+                 <Im />
                 <Bio />
                 <strong className="clearfix" /> 
                 <Clients />
-                <ServiceReq  />
+                {/* <Prices /> */}
+                <ServiceReq actions={actions} services={services} />
                
              </article>
         )
@@ -68,7 +69,7 @@ const mapStateToProps = (state)=>{
     const {services} = state
 
     return{
-        services
+        about
     }
 }
 

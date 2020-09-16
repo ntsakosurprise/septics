@@ -47,35 +47,7 @@ class QuoteForm extends  Component{
                     }
                     
                 },
-                phone:{
-                    
-                    control: 'input',
-                    value:'',
-                    validation: {
-                            isRequiredFormat:{
-                                
-                                isRequired: true,
-                                isNumber: true,
-                                isLen: 10
-                            },
-                            isPlaceholder: true
-                
-                    },
-                    isValid: false,
-                    isTouched: false,
-                    validationMessage: '',
-                    validationStyles: {
-                        position: 'right'
-                    },
-                    config: {
-                        
-                        name: "phone",
-                        type: 'text',
-                        disabled: false
-                        
-                    }
-                    
-                },
+              
                 email:{
                     
                     control: 'input',
@@ -104,34 +76,7 @@ class QuoteForm extends  Component{
                     }
                     
                 },
-                area:{
-                    
-                    control: 'input',
-                    value:'',
-                    validation: {
-                            isRequiredFormat:{
-                                minLetters: 2,
-                                isRequired: true,
-                               
-                            },
-                            isPlaceholder: true
-                
-                    },
-                    isValid: false,
-                    isTouched: false,
-                    validationMessage: '',
-                    validationStyles: {
-                        position: 'right'
-                    },
-                    config: {
-                        
-                        name: "area",
-                        type: 'text',
-                        disabled: false
-                        
-                    }
-                    
-                },
+               
                 message:{
                     
                     control: 'textarea',
@@ -272,100 +217,70 @@ class QuoteForm extends  Component{
 
    
     submitForm = (e)=>{
+                    
+        e.preventDefault() 
+
+        
+        
+        const {actions} = this.props
+        const {sendContactData} = actions 
+        let submittData = {} 
+        let formIsValid = true 
+        let {form} = this.state 
+        let {notify} = this
+        
+        
+        
+        for(let k in form){
+            
+            console.log('THE SUBMIT CONTROL')
+            console.log(form[k])
+            if(form[k].validation && form[k].validation.isRequiredFormat){
+
                 
-            e.preventDefault() 
-            return 
+
+                if(form[k].isValid === false){
+
             
-            const {actions} = this.props
-            const {sendUserProfileUpdate,unsetIsProfile} = actions 
-            let submittData = {} 
-            let formIsValid = true 
-            let {form} = this.state 
-            let {notify} = this
-            
-            
-            
-            for(let k in form){
+                    formIsValid = false 
+
+                    notify({message:'Filled form data must be valid',type: 'warn',className: 'notify-warn'})
+                    break
+
+
+                }else{
+
+                    submittData[k] = form[k].value
                 
-                console.log('THE SUBMIT CONTROL')
-                console.log(form[k])
-                if(form[k].validation && form[k].validation.isRequired){
-
-                    if(form[k].isValid === false){
-
-                
-                        formIsValid = false 
-    
-                        notify({message:'Filled form data must be valid',type: 'warn',className: 'notify-warn'})
-                        break
-    
-    
-                    }else{
-    
-                        if(k !== 'password' || form[k].value.trim() !== '' ){
-    
-                           
-                            submittData[k] = form[k].value
-                        }
-                        
-                    }
-
-                }else if(form[k].value.trim() !== ''){
-
-                    if(form[k].isValid === false){
-                        formIsValid = false 
-                        break
-                    }else{
-
-                        submittData[k] = form[k].value
-
-                    }
-                  
                 }
-              
+
+            }else{
+
+                if(form[k].value.trim() !== ''){
+
+                    submittData[k] = form[k].value
+
+                }
             
-            } 
-
-            if(!formIsValid) return
-
-
-            if(submittData.username){
-
-                console.log('THE name')
-                console.log(submittData.username)
-                let names = submittData.username.split(' ') 
-                console.log(names)
-
-                submittData.fullName = {firstName: names[0],lastName: names[1]} 
-                delete submittData.username 
-                console.log('THE FORM DATA TO BE SUMBITTED')
-                console.log(submittData)
-              
-                 
-            }
-
-            if(submittData.newpassword){
-
-                submittData['password'] = submittData.newpassword 
-                delete submittData.newpassword
 
             }
+        
+        
+        } 
 
-            
-            
-            
-            console.log(submittData)
-           
-            // console.log('THE SIGN UP DATA')
-            // console.log(submittData)
-            
-            // submittData.strategy = 'anzii'
-            sendUserProfileUpdate(submittData,1,'infoUpdate') 
-            // unsetIsProfile()
-            
-            
+        if(!formIsValid) return
+
+
+
+        console.log(submittData)
+      
+        sendContactData(submittData)  
+        
+        
+        
 
     }
+
 
     notify = (config) => {
 
@@ -379,15 +294,17 @@ class QuoteForm extends  Component{
         
     componentDidUpdate(){
         
-                console.log()
-                const {isActionSuccessful,launcher,isFetcing,actions} = this.props 
-                const  {removeNotification} = actions 
-                console.log('THE LAUNCHER INFOUPDATE::')
-                console.log(launcher)
+                const {actions,home} = this.props
+                const {isActionSuccessful,isFetcing} = home
+                const {removeNotification} = actions 
+
+               
         
-                if(isActionSuccessful && launcher === 'infoUpdate') {
+                if(isActionSuccessful) {
                     this.notify({message:'Profile info successfully updated',type: 'success',className: 'notify-success'}) 
-                    removeNotification()
+                    removeNotification() 
+                  
+                   
                 }
 
                
@@ -441,7 +358,7 @@ class QuoteForm extends  Component{
                             <FormControl 
                         
                                 styles={{child:'home__quote--form-input',error: ''}}
-                                id = ''
+                                id = 'email'
                                 controlData={this.state.form.email}
                                 change={(control)=>this.updator(control)}
                                

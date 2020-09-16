@@ -48,7 +48,28 @@ export default (state = props, action)=>{
                 message: action.error
                 
             }
+        case types.SET_CURRENT_SENDER:
 
+            return  {
+
+                ...state,
+                isFetching: false,
+                isProgressBar: false,
+                currentSender: action.payload
+                
+            } 
+                
+        case types.UNSET_CURRENT_SENDER:
+
+            return  {
+
+                ...state,
+                isFetching: false,
+                isProgressBar: false,
+                currentSender: ''
+                
+            } 
+            
         
         case types.UNSET_NOTIFICATION_DISPLAY:
 

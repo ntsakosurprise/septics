@@ -73,7 +73,7 @@ class Services extends Component{
                                             </p>
 
                                             <p className="home__services--service-text">
-                                            Realising the greater need of septic tanks, SouthSeptic saw a companion need to mantain septic tanks, and  to provide solutions to problems that may result from their use. 
+                                            Realising the greater need of septic tanks, South Septic saw a companion need to mantain septic tanks, and  to provide solutions to problems that may result from their use. 
 
                                             </p>
 
@@ -155,7 +155,7 @@ class Services extends Component{
                      data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">2</span>
                         <span class="process__title">Sewage Removal  &amp; Disposal Sites</span>
-                        <span class="process__subtitle">we use the honey sucker tank to remove effluent or sewage water; and then soon after, we dispose the effluent water at the disposal site.</span>
+                        <span class="process__subtitle">Honey sucker tank to remove effluent or sewage water; and then soon after, we dispose the effluent water at the disposal site.</span>
                     </li>
 
                     <li class="process__item" 
@@ -165,7 +165,7 @@ class Services extends Component{
                      data-aos-easing="ease-in-out-cubic">
                         <span class="process__number">3</span>
                         <span class="process__title">Client Enviromental License provision</span>
-                        <span class="process__subtitle">We provide our clients with the enviromental license of the waste water plant.</span>
+                        <span class="process__subtitle">Provide our clients with the enviromental license of the waste water plant.</span>
                     </li>
 
                     <li class="process__item"  data-aos="fade-down"

@@ -53,7 +53,7 @@ class Bio extends Component{
                             <div>
 
                               <p>
-                              We are a waste management business that is currently, mainly focused on the collection of effluent water from septic tanks. Situated in Midrand,our current main areas of focus are Centurion, Mnandi, Joburg, Pretoria, Kyalami,Brits,and Glen Austin. 
+                              We are a waste management business that is currently, mainly focused on the collection of effluent water from septic tanks. Situated in Midrand, our current main areas of focus are Centurion, Mnandi, Johannesburg, Pretoria, Kyalami, Brits, and Glen Austin. 
                              
 
 
@@ -83,7 +83,7 @@ class Bio extends Component{
                             <div>
 
                             <p>
-                            As SouthSeptic,we take pride in serving our clients to the utmost best. 
+                            As South Septic, we take pride in serving our clients to the utmost best. 
                             Our level of dedication to our work is the foundation upon which our current clientele's trust and recommendation of our services is built.
 
 
@@ -92,8 +92,8 @@ class Bio extends Component{
                     
 
                               <p>
-                              Not only are we dedicated to our work,but to the provision of great service that we know our clientele needs. Out commitment to continue
-                               giving our clients the best possible service is incorporated into the core of our business,and it will always be.
+                              Not only are we dedicated to our work, but to the provision of great service that we know our clientele needs. Out commitment to continue
+                               giving our clients the best possible service is incorporated into the core of our business, and it will always be.
                               </p>
 
                             </div>
