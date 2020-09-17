@@ -6397,17 +6397,40 @@ body {
       height: auto;
       padding-left: 0;
       padding-top: 3rem; }
+      @media only screen and (max-width: 600px) {
+        .about__bio--bi, .about__bio--dd {
+          margin-left: 1%;
+          width: 90%; } }
       .about__bio--bi h4, .about__bio--dd h4 {
         font-size: 2rem;
         margin-left: 10%;
         margin-bottom: 3rem;
         color: #663333; }
+        @media only screen and (max-width: 900px) {
+          .about__bio--bi h4, .about__bio--dd h4 {
+            margin-left: 40%; } }
+        @media only screen and (max-width: 450px) {
+          .about__bio--bi h4, .about__bio--dd h4 {
+            margin-left: 20%; } }
+        @media only screen and (max-width: 360px) {
+          .about__bio--bi h4, .about__bio--dd h4 {
+            margin-left: 10%; } }
       .about__bio--bi div, .about__bio--dd div {
         font-size: 1.5rem;
         padding-bottom: 1.5rem; }
+        @media only screen and (max-width: 900px) {
+          .about__bio--bi div, .about__bio--dd div {
+            margin-left: 10%; } }
+        @media only screen and (max-width: 450px) {
+          .about__bio--bi div, .about__bio--dd div {
+            margin-left: 5%;
+            text-align: center; } }
         .about__bio--bi div p, .about__bio--dd div p {
           margin-bottom: 1rem;
           margin-left: 10%; }
+          @media only screen and (max-width: 450px) {
+            .about__bio--bi div p, .about__bio--dd div p {
+              margin-left: 0; } }
     .about__bio--social {
       padding-top: 10px;
       padding-left: 20%; }
@@ -6467,30 +6490,29 @@ body {
     .about__clients--service {
       width: 50%;
       float: left; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 900px) {
         .about__clients--service {
-          width: 80%;
+          width: 100%;
           float: none; } }
     .about__clients--promise {
       height: 500px;
       float: left;
       width: 50%;
-      background-image: url("../img/about_promise.jpg");
       position: relative; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 900px) {
         .about__clients--promise {
           width: 80%;
           float: none;
           margin-bottom: 5rem;
+          height: 300px;
           margin-left: 10%; } }
+      @media only screen and (max-width: 450px) {
+        .about__clients--promise {
+          width: 90%; } }
       .about__clients--promise-title {
         position: absolute;
-        top: -200px;
         margin-bottom: 30px;
         padding-left: 5%; }
-        @media only screen and (max-width: 900px) {
-          .about__clients--promise-title {
-            top: -150px; } }
         .about__clients--promise-title-primary {
           color: #228B22;
           display: inline-block;
@@ -6500,14 +6522,24 @@ body {
           color: #000000;
           display: inline-block;
           font-size: 5rem; }
+      .about__clients--promise-fig {
+        width: 15rem;
+        position: relative;
+        left: 30%;
+        margin-top: 10rem; }
+        @media only screen and (max-width: 450px) {
+          .about__clients--promise-fig {
+            left: 20%; } }
+        .about__clients--promise-fig img {
+          width: 100%; }
       .about__clients--promise p {
         position: absolute;
-        font-size: 5rem !important;
-        width: 50%;
-        line-height: normal !important; }
-        @media only screen and (max-width: 900px) {
+        width: 70%;
+        margin-left: 15%; }
+        @media only screen and (max-width: 450px) {
           .about__clients--promise p {
-            font-size: 3rem !important; } }
+            width: 90%;
+            margin-left: 5%; } }
   .about__action {
     width: 100%;
     position: relative;
@@ -6518,6 +6550,9 @@ body {
       .about__action {
         margin-top: 0;
         padding-bottom: 0; } }
+    @media only screen and (max-width: 450px) {
+      .about__action {
+        text-align: center; } }
 
 .section-slantedcard {
   overflow: hidden;
@@ -9746,7 +9781,7 @@ div:nth-child(3n + 1) > img {
     .welcome-text {
       margin-top: 0;
       position: relative;
-      top: 220px;
+      top: 300px;
       margin-left: 38%; } }
   @media only screen and (max-width: 540px) {
     .welcome-text {
@@ -9756,7 +9791,7 @@ div:nth-child(3n + 1) > img {
       margin-left: 8%; } }
   @media only screen and (max-width: 450px) {
     .welcome-text {
-      top: 250px; } }
+      top: 310px; } }
   .welcome-text p {
     font-size: 3rem; }
 

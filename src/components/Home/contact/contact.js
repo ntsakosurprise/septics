@@ -58,12 +58,12 @@ class Contact extends Component{
                             </div>
                             <div className="home__contact--i-content">
                                 <section className="home__contact--i-cont-i">
-                                    <span>info@South Septic.co.za</span>
+                                    <span>info@southseptic.co.za</span>
                                     <small>Information</small>
                                 </section>
 
                                 <section className="home__contact--i-cont-i">
-                                    <span>accounts@South Septic.co.za</span>
+                                    <span>accounts@southseptic.co.za</span>
                                     <small>Accounts</small>
                                 </section>
                                
@@ -94,15 +94,15 @@ class Contact extends Component{
                                         data-aos-delay="1200"
                                         data-aos-duration="10000"
                                         data-aos-easing="ease-in-out-cubic">
-                                    <Link to='/about' className="link footer__brand-imgs-links">
+                                    <a href='https://www.facebook.com/southseptic/' target="_blank" className="link footer__brand-imgs-links">
                                         <img src="/img/social/facebook.png" className="footer__brand-imgs" />
-                                    </Link> 
-                                    <Link to='/services' className="link footer__brand-imgs-links">
+                                    </a> 
+                                    <a href='https://twitter.com/southseptic' target="_blank" className="link footer__brand-imgs-links">
                                         <img src="/img/social/twitter.png" className="footer__brand-imgs" />
-                                    </Link>
-                                    <Link to='/contact' className="link footer__brand-imgs-links">
+                                    </a>
+                                    <a href='https://www.instagram.com/southseptic' target="_blank" className="link footer__brand-imgs-links">
                                         <img src="/img/social/instagram.png" className="footer__brand-imgs" />
-                                    </Link>
+                                    </a>
                                 </nav>
 
                             </section>

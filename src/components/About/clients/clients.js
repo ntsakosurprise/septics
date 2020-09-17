@@ -27,17 +27,24 @@ class Clients extends  Component{
                     <section className="about__clients">
 
                         <div className="about__clients--promise">
-                            <h2 className="about__clients--promise-title">
+                            {/* <h2 className="about__clients--promise-title">
                                 <span className="about__clients--promise-title-primary">to</span> 
                                 <span className="about__clients--promise-title-secondary">Our</span>
                                 <span className="about__clients--promise-title-secondary">Clients</span>
                                 <small className="contact__touch--circle-1"></small>
                                 <small className="contact__touch--circle-2"></small>
                             
-                            </h2>
+                            </h2> */}
 
-                            <p>We are all about you, and here to serve you so please...
-                            </p>
+                            <div>
+                                <figure className="about__clients--promise-fig">
+                                <img src="/img/abt_bg.jpg" />
+                                </figure>
+                                <p>
+                                   A good advice to our clients: Always practice caution when disposing waste via septic tanks. 
+                                   A regular inspection and maintenance of your septic tank is highly likely to improve its health and life span.
+                                </p>
+                            </div>
 
                         </div> 
 
