@@ -182,7 +182,7 @@ class Services extends Component{
 
                 </section>
 
-                <section className ="home__services--process-piks">
+                {/* <section className ="home__services--process-piks">
                         <div className="service-style-images">
                             <div>
                                 <img src="/img/service_behind_3.jpg" alt="Eleanor from The Good Place" />
@@ -197,7 +197,7 @@ class Services extends Component{
                                 <img src="/img/service_behind_2.jpg" alt="Tahani from The Good Place" />
                             </div>
                     </div>
-                </section>
+                </section> */}
 
                
                 

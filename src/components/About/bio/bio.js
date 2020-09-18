@@ -92,8 +92,8 @@ class Bio extends Component{
                     
 
                               <p>
-                              Not only are we dedicated to our work, but to the provision of great service that we know our clientele needs. Out commitment to continue
-                               giving our clients the best possible service is incorporated into the core of our business, and it will always be.
+                              Not only are we dedicated to our work, but to the provision of great service that we know our clientele needs. Our commitment to continue
+                               giving our clients the best possible service is incorporated into the core of our business and it will always be.
                               </p>
 
                             </div>

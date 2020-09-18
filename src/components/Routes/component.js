@@ -5,10 +5,10 @@ import { withRouter } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import all from '../all/routes'
-import restricted from '../restricted/routes'
-import limited from '../limited/routes'
-import Header from '../Header/component'
-import LoggedIn from '../LoggedIn/component'
+// import restricted from '../restricted/routes'
+// import limited from '../limited/routes'
+// import Header from '../Header/component'
+// import LoggedIn from '../LoggedIn/component'
 import LoggedOut from '../LoggedOut/component'
 import NotFound404 from '../Notfound404/component'
 import ScrollToTop from '../ScrollToTop/component' 
@@ -43,11 +43,11 @@ class Routes extends Component{
                         
                         
 
-                        {restricted.map((r,i)=>{
+                        {/* {restricted.map((r,i)=>{
                                 
                                 return <LoggedIn {...this.props} exact path={r.path} component={r.component} key={i} />
             
-                            })}
+                            })} */}
 
                             {all.map((r,i)=>{
                                 

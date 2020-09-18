@@ -31,7 +31,7 @@ class Im extends  Component{
                          data-aos-delay="1000"
                          data-aos-duration="15000"
                          data-aos-easing="ease-in-out-cubic"></div>
-                       <div className="about__im--sm"></div>
+                       {/* <div className="about__im--sm"></div> */}
                     </section>
 
                     

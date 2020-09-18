@@ -1,13 +1,13 @@
 
 
 // import Messenger from '../Messenger/component'
-import CandidateDashboard from '../CandidateDashboard/component'
-import CandJobAlertsCat from '../CandJobAlertsCat/component'
-import CandSavedJobs from '../CandSavedJobs/component'
-import CandHistory from '../CandHistory/component'
-import CandJobAlertsList from '../CandJobAlertsList/component'
-import CandJobAlertsManage from '../CandJobAlertsManage/component'
-import CandSettings from '../CandSettings/component'
+// import CandidateDashboard from '../CandidateDashboard/component'
+// import CandJobAlertsCat from '../CandJobAlertsCat/component'
+// import CandSavedJobs from '../CandSavedJobs/component'
+// import CandHistory from '../CandHistory/component'
+// import CandJobAlertsList from '../CandJobAlertsList/component'
+// import CandJobAlertsManage from '../CandJobAlertsManage/component'
+// import CandSettings from '../CandSettings/component'
 
 
 export default [

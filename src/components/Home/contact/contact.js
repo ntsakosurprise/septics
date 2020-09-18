@@ -42,7 +42,7 @@ class Contact extends Component{
                                 </section>
 
                                 <section className="home__contact--i-cont-i">
-                                    <span><a href="tel:0670245492">0670245492</a></span>
+                                    <span><a href="tel:0829595444">0829595444</a></span>
                                     <small>Mobile</small>
                                 </section>
                                
@@ -211,7 +211,7 @@ class Contact extends Component{
                                     <span>Call Us Today for the cheapest quotes!</span>
                                         <p>
                                             <small><span>+</span><a href="tel:0749159974">0749159974</a></small>
-                                            <small><span>+</span><a href="tel:0670245492">0670245492</a></small>
+                                            {/* <small><span>+</span><a href="tel:0670245492">0670245492</a></small> */}
                                             <small><span>+</span><a href="tel:0829595444">0829595444</a></small>
                                         </p>
                                     </section>

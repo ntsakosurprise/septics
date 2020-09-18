@@ -12007,6 +12007,14 @@ div:nth-child(3n + 1) > img {
   color: #000;
   background: #fff; }
 
+.locations-loks {
+  width: 70%;
+  position: relative;
+  left: 25%; }
+  @media only screen and (max-width: 900px) {
+    .locations-loks {
+      left: 10%; } }
+
 .signup-content {
   height: 88vh;
   padding-top: 3rem;

@@ -45,8 +45,8 @@ class ServiceReq extends  Component{
                                             <section className="slide__buttonContainer services__area">
 
                                             <Link to="#" title="Button slide blue/green" class="button btnSlide btnBlueGreen">
-                                                <span class="top" data-content="Slide">Austin</span>
-                                                <span class="bottom" data-content="Slide">Glen</span>
+                                                <span class="top" data-content="Slide">Pretoria</span>
+                                                <span class="bottom" data-content="Slide">Request</span>
                                             </Link>
 
                                             </section> 
@@ -84,6 +84,37 @@ class ServiceReq extends  Component{
                                     </div>
                                 </div>
                             </div>
+
+                            <section className="locations-loks">
+
+                                                
+                                   
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn2">Johannesburg</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Kyalami</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Glen Austin</button>
+                                    </div>
+
+                                    
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Brits</button>
+                                    </div>
+
+                                    <div className="story__col-lg-3">
+                                        <button className="story__lo-btn story__btn3">Hartebeespoort</button>
+                                    </div>
+
+
+                                </section>
+
 
                       
                     </section>
