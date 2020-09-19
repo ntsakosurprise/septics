@@ -60,7 +60,20 @@ export default (state = props, action)=>{
                 isActionSuccessful: action.payload
                 
             } 
-        
+
+
+
+        case types.UNSET_CURRENT_SENDER:
+
+            return  {
+
+                ...state,
+                isFetching: false,
+                isProgressBar: false,
+                message: ''
+                
+            } 
+    
     
         
     

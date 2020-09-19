@@ -23,6 +23,16 @@ export const sendContactData = (data)=> {
 }
 
 
+export const unsetCurrentErrorMessage = (current)=>{
+
+  return {
+
+    type: types.UNSET_CURRENT_SENDER,
+
+  }
+}
+
+
 
 export const removeNotification = ()=>{
 

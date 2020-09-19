@@ -361,7 +361,7 @@ class ServiceForm extends  Component{
                 // }
 
                 const {actions,home} = this.props
-                const {isActionSuccessful,isFetcing} = home
+                const {isActionSuccessful,isFetcing,message} = home
                 const {removeNotification,unsetCurrentSender} = actions 
 
                 if(isActionSuccessful) {
@@ -369,7 +369,11 @@ class ServiceForm extends  Component{
                     removeNotification() 
                     unsetCurrentSender()
                   
-                   
+                }else if(message.trim()){
+
+                    this.notify({message:'There wasn a network error sending message',type: 'error',className: 'notify-error'}) 
+                    removeNotification() 
+                    unsetCurrentSender()
                 }
 
                

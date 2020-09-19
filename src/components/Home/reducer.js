@@ -66,7 +66,8 @@ export default (state = props, action)=>{
                 ...state,
                 isFetching: false,
                 isProgressBar: false,
-                currentSender: ''
+                currentSender: '',
+                message: ''
                 
             } 
             

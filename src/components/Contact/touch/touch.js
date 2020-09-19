@@ -66,7 +66,7 @@ class Touch extends Component{
                             <div>
 
                               <span>074 9159 974</span>
-                              <span>067 024 5492</span>
+                              <span>082 9595 444</span>
 
                             </div>
                            
