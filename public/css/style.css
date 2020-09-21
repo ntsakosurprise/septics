@@ -8123,6 +8123,15 @@ p {
     background-color: #FFF;
     height: 100vh;
     position: relative; }
+    @media only screen and (max-width: 800px) {
+      .home__goal {
+        height: 500px; } }
+    @media only screen and (max-width: 600px) {
+      .home__goal {
+        height: 100vh; } }
+    @media only screen and (max-width: 450px) {
+      .home__goal {
+        height: 600px; } }
     .home__goal--text {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -8189,16 +8198,20 @@ p {
         @media only screen and (max-width: 600px) {
           .home__goal-overlay-inner p {
             width: 80%;
-            margin-left: 20%; } }
+            margin-left: 2%; } }
         @media only screen and (max-width: 450px) {
           .home__goal-overlay-inner p {
-            width: 90%;
-            margin-left: 10%; } }
+            width: 85%;
+            margin-left: 2%; } }
     .home__goal--squares-container {
       position: absolute;
       left: 55%;
       width: 20rem;
       bottom: 30%; }
+      @media only screen and (max-width: 450px) {
+        .home__goal--squares-container {
+          bottom: 22%;
+          left: 35%; } }
     .home__goal--squares {
       padding: 1rem;
       height: 7rem;
@@ -8318,9 +8331,15 @@ p {
       @media only screen and (max-width: 540px) {
         .home__septic--pledge {
           padding-top: 250px; } }
+      @media only screen and (max-width: 600px) {
+        .home__septic--pledge {
+          width: 70%;
+          left: 20%; } }
       @media only screen and (max-width: 450px) {
         .home__septic--pledge {
-          padding-top: 220px; } }
+          padding-top: 220px;
+          width: 90%;
+          left: 8%; } }
       .home__septic--pledge-title {
         position: relative; }
         .home__septic--pledge-title-o {
@@ -8350,14 +8369,20 @@ p {
           left: -5rem; }
           @media only screen and (max-width: 600px) {
             .home__septic--pledge-title-p {
-              left: 10rem;
-              top: 5px; } }
+              left: -10%;
+              top: 30px; } }
       .home__septic--pledge-list {
         list-style-type: none;
         margin: 0;
         padding: 0;
         margin-top: 3rem;
         margin-left: 6rem; }
+        @media only screen and (max-width: 600px) {
+          .home__septic--pledge-list {
+            margin-top: 5rem; } }
+        @media only screen and (max-width: 360px) {
+          .home__septic--pledge-list {
+            margin-left: 5%; } }
         .home__septic--pledge-list li {
           margin-bottom: .9rem;
           font-size: 1.3rem;
@@ -8374,6 +8399,9 @@ p {
         .home__septic--title {
           top: 570px;
           left: -15%; } }
+      @media only screen and (max-width: 800px) {
+        .home__septic--title {
+          width: 90%; } }
       .home__septic--title-text {
         display: inline-block;
         margin-right: 1rem;
@@ -8720,6 +8748,10 @@ p {
             .home__story--side2-i-al-head {
               width: 80%;
               margin-left: 10%; } }
+          @media only screen and (max-width: 360px) {
+            .home__story--side2-i-al-head {
+              width: 90%;
+              margin-left: 3%; } }
           .home__story--side2-i-al-head small {
             display: inline-block;
             color: white;
@@ -8729,6 +8761,9 @@ p {
             display: inline-block;
             font-size: 3rem;
             color: #663333; }
+            @media only screen and (max-width: 450px) {
+              .home__story--side2-i-al-head span {
+                font-size: 2rem; } }
         .home__story--side2-i-al-body p {
           color: #fff;
           font-size: 1.7rem;
@@ -9048,6 +9083,9 @@ p {
           @media only screen and (max-width: 900px) {
             .home__services--process-title-p {
               top: 115px; } }
+          @media only screen and (max-width: 800px) {
+            .home__services--process-title-p {
+              top: 40px; } }
           @media only screen and (max-width: 600px) {
             .home__services--process-title-p {
               position: relative;
@@ -9117,6 +9155,11 @@ p {
         .home__pledge--title {
           margin-top: 150px;
           padding-left: 15%; } }
+      @media only screen and (max-width: 450px) {
+        .home__pledge--title {
+          width: 85%;
+          padding-left: 5%;
+          font-size: 3rem; } }
       .home__pledge--title-primary {
         color: #228B22;
         display: inline-block;
@@ -9134,6 +9177,10 @@ p {
       @media only screen and (max-width: 600px) {
         .home__pledge--content {
           width: 80%; } }
+      @media only screen and (max-width: 450px) {
+        .home__pledge--content {
+          margin-left: 5%;
+          width: 85%; } }
       .home__pledge--content-text {
         font-size: 2rem; }
   .home__passion {
