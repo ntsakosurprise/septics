@@ -65,7 +65,7 @@ class Touch extends Component{
                             <h4>Contacts</h4>
                             <div>
 
-                              <span>074 9159 974</span>
+                              <span>067 0245 492</span>
                               <span>082 9595 444</span>
 
                             </div>
