@@ -2,7 +2,7 @@
 import React from 'react'
 import Tooltip from './tooltip'
 
-export default function FormControl({controlData,id,change,styles,placeHolder}){
+export default function FormControl({controlData={},id,change,styles,placeHolder}){
 	
   
     const renderError = ()=>{
@@ -13,7 +13,7 @@ export default function FormControl({controlData,id,change,styles,placeHolder}){
         
         if(controlData.validation && controlData.isValid === false){
             
-            console.log('The form error')
+            //console.log('The form error')
             if(controlData.validationMessage.trim() !== ''){
 
                 let validStyles = controlData.validationStyles ? controlData.validationStyles : null
