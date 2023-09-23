@@ -34,7 +34,7 @@ class Im extends  Component{
                                     <div class="content">
                                     <h2>01</h2>
                                    
-                                    <p> Use our site map to see a complete structure of our website to easily navigate through.</p>
+                                    <p> If you have questions related to septic tanks,our FAQs may help you find the information you need.</p>
                                     <section className="slide__buttonContainer">
 
                                             <Link to="#" title="Button slide blue/green" class="button btnSlide btnBlueGreen">
@@ -51,7 +51,7 @@ class Im extends  Component{
                             </section>
 
                             <h3 className="services__im--lg-title">
-                                Our Site Map
+                                Our Frequently Asked Questions
                             </h3>
 
                         </div>

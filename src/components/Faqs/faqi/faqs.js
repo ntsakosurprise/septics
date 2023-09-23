@@ -1,13 +1,15 @@
 export default [
 
     {
-      content: "Pumping a septic tank on a regular basis is a recommended practice,but how often this regularity should be applied depends on a number of factors including how bad or good it is cared for; in our experience, some people do it in a space of every two years, others do it in two, while few do it in a space of 5 years or more. ",
+      content: "Home",
       title: 'How often should a septic tank be pumped?',
+      url: '/'
     
     },
     {
-        content: "Inconsistencies in handling or caring for a septic tank are not an uncommon act; sometimes people do it unaware, so it helps to know just which of these bad acts are to be able to prevent them. These are Disposable diapers,plastics,etc.",
+        content: "About",
         title: `What is considered bad in handling a septic tank?`,
+        url: '/about'
       
     },
     // {
@@ -17,21 +19,37 @@ export default [
     // },
 
     {
-        content: "You should be aware that Septic tanks need some time to be able to handle waste water solids before treated water can enter the drain.",
+        content: "Contact",
         title: 'What should I know about showering and septic tanks? ',
+        url: '/contact'
       
     },
     {
-    content: "Food wastes from the drain when washing is done through the kitchen sinks may be a cause of damage to your septic tank.",
+    content: "Services",
     title: 'Is waste food a threat to septic tanks?',
+    url: '/services'
     
     },
     {
-    content: "You need to know that plastics should always be kept away from septic tanks. Plastics like condoms shouldn't be disposed through a septic tank.",
+    content: "Faqs",
     title: 'What else do I have to know about plastics and septic tanks',
+    url: '/faqs'
     
     },
-   ,
+    {
+        content: "Privacy",
+        title: 'What else do I have to know about plastics and septic tanks',
+        url: '/privacy'
+        
+    },
+    {
+        content: "Sitemap",
+        title: 'What else do I have to know about plastics and septic tanks',
+        url: '/sitemap'
+        
+    },
+   
+   
     
    
 ]

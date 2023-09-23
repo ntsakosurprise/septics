@@ -21,10 +21,6 @@ class Faqi extends Component{
 
     render(){
 
-        let styles = {display: `block`,
-            marginBottom: `2rem`,
-            fontSize: `3rem`}
-
         return(
 
            
@@ -35,7 +31,7 @@ class Faqi extends Component{
 
                  if(f.content){
 
-                    return(<a className="link" style={styles} href={f.url} key={i} >{f.content}</a>)
+                    return(<Accordion name={f.title} content={f.content} key={i} />)
 
 
                  }else{

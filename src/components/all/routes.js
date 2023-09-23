@@ -13,6 +13,7 @@ import Error500 from '../Error500/component'
 import Error503 from '../Error503/component'
 import Privacy from '../Privacy/component'
 import Faqs from '../Faqs/component'
+import Sitemap from '../Sitemap/component'
 
 
 
@@ -40,9 +41,15 @@ export default [
     },
     
     {
-        component: Faqs,
+        component: Sitemap,
         name: 'Faqs',
         path: '/faqs'
+    },
+
+    {
+        component: Faqs,
+        name: 'Sitemap',
+        path: '/sitemap'
     },
     
     {

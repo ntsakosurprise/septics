@@ -49,7 +49,7 @@ class Faqs extends Component{
                   </section> */}
 
                 <h2 className="services__title">
-                    <span className="services__title-primary">Site Map</span> 
+                    <span className="services__title-primary">Faqs</span> 
                     {/* <span className="services__title-secondary">Services</span> */}
                     
                 </h2>
@@ -57,7 +57,7 @@ class Faqs extends Component{
                  <Im />
                 <Faqi />
                 <strong className="clearfix" /> 
-                {/* <ServiceReq /> */}
+                <ServiceReq />
                
                     
                 
