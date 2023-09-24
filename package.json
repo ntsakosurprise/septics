@@ -1,5 +1,6 @@
 {
-  "name": "jobbri",
+  "homepage": "https://ntsakosurprise.github.io/septics",
+  "name": "septics",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -9,6 +10,7 @@
     "autoprefixer": "^8.6.5",
     "babel-loader": "^8.0.6",
     "concat": "^1.0.3",
+    "gh-pages": "^6.0.0",
     "node-sass": "^4.12.0",
     "nodemon-webpack-plugin": "^4.0.8",
     "npm-run-all": "^4.1.5"
@@ -75,6 +77,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
