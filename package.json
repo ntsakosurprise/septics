@@ -10,8 +10,6 @@
     "autoprefixer": "^8.6.5",
     "babel-loader": "^8.0.6",
     "concat": "^1.0.3",
-    "gh-pages": "^6.0.0",
-    "node-sass": "^4.12.0",
     "nodemon-webpack-plugin": "^4.0.8",
     "npm-run-all": "^4.1.5"
   },
@@ -39,6 +37,7 @@
     "express-async-errors": "^3.1.1",
     "formidable": "^1.2.1",
     "fs": "0.0.1-security",
+    "gh-pages": "^6.0.0",
     "google": "^2.1.0",
     "google-react-maps": "^1.5.0",
     "gsap": "^3.5.1",
@@ -77,13 +76,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages b gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:dev:sass": "node-sass resources/sass/main.scss public/css/style.css -w",
-    "prod:compile:sass": "node-sass resources/sass/main.scss public/css/style.comp.css",
     "prod:nodemon": "nodemon npm start app"
   },
   "eslintConfig": {
